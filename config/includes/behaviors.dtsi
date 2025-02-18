@@ -23,16 +23,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <210>;
             quick-tap-ms = <QUICK_TAP_MS>;
+            require-prior-idle-ms = <165>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
-            require-prior-idle-ms = <160>;
         };
         asl: alpha_shift_l {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <190>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <QUICK_TAP_MS>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
@@ -44,16 +44,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <210>;
             quick-tap-ms = <QUICK_TAP_MS>;
+            require-prior-idle-ms = <165>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
-            require-prior-idle-ms = <160>;
         };
         asr: alpha_shift_r {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <190>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <QUICK_TAP_MS>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
