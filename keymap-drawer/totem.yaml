@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: Ctrl}
+  - {t: A, h: Gui}
   - {t: S, h: Alt}
-  - {t: D, h: Gui}
-  - {t: F, h: Shift}
+  - {t: D, h: Shift}
+  - {t: F, h: Ctrl}
   - G
   - H
-  - {t: J, h: Shift}
-  - {t: K, h: Gui}
+  - {t: J, h: Ctrl}
+  - {t: K, h: Shift}
   - {t: L, h: Alt}
-  - {t: '''', h: Ctrl}
+  - {t: '''', h: Gui}
   - ESC
   - Z
   - X
@@ -46,31 +46,31 @@ layers:
   - '9'
   - ']'
   - $$mdi:calculator$$
-  - Mid-dot
-  - ''
-  - ''
-  - ''
+  - $$mdi:cursor-default-click-outline$$
+  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-up$$', type: text_with_symbol}
+  - $$mdi:cursor-default-click$$
+  - {t: '$$mdi:mouse-scroll-wheel$$', s: '$$mdi:arrow-up-thin$$', type: text_with_symbol}
   - ;
   - '4'
   - '5'
   - '6'
   - '='
   - {t: NAV, h: '$$mdi:toggle-switch$$'}
-  - ㅎkg
-  - ㅎg
-  - ㅎmg
-  - ㅎVAC
+  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-left$$', type: text_with_symbol}
+  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-down$$', type: text_with_symbol}
+  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-right$$', type: text_with_symbol}
+  - {t: '$$mdi:mouse-scroll-wheel$$', s: '$$mdi:arrow-down-thin$$', type: text_with_symbol}
   - ESC
   - '`'
   - '1'
   - '2'
   - '3'
   - \
-  - ㅎ±
-  - ㅎ℃
-  - ㅎ₩
-  - ㅎØ
-  - ㅎmm
+  - $$mdi:redo$$
+  - $$mdi:content-paste$$
+  - $$mdi:content-copy$$
+  - $$mdi:content-cut$$
+  - $$mdi:undo$$
   - $$mdi:keyboard-return$$
   - .
   - '0'
@@ -89,10 +89,10 @@ layers:
   - F8
   - F9
   - F12
-  - {t: ':', h: Ctrl}
+  - {t: ':', h: Gui}
   - {t: $, h: Alt}
-  - {t: '%', h: Gui}
-  - {t: ^, h: Shift}
+  - {t: '%', h: Shift}
+  - {t: ^, h: Ctrl}
   - +
   - Scroll Lock
   - F4
@@ -128,10 +128,10 @@ layers:
   - $$mdi:arrow-up$$
   - END
   - Page Up
-  - Ctrl
-  - Alt
   - Gui
+  - Alt
   - Shift
+  - Ctrl
   - {t: NUM, h: '$$mdi:toggle-switch$$'}
   - Caps Lock
   - $$mdi:arrow-left$$
@@ -162,39 +162,39 @@ layers:
   - BAT Save
   - Lock
   - Sleep
-  - ''
-  - {t: '$$mdi:mouse-scroll-wheel$$', s: '$$mdi:arrow-left-thin$$', type: text_with_symbol}
-  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-up$$', type: text_with_symbol}
-  - {t: '$$mdi:mouse-scroll-wheel$$', s: '$$mdi:arrow-right-thin$$', type: text_with_symbol}
-  - {t: '$$mdi:mouse-scroll-wheel$$', s: '$$mdi:arrow-up-thin$$', type: text_with_symbol}
-  - Ctrl
-  - Alt
-  - Gui
-  - Shift
-  - Studio Unlock
   - APP
-  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-left$$', type: text_with_symbol}
-  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-down$$', type: text_with_symbol}
-  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-right$$', type: text_with_symbol}
-  - {t: '$$mdi:mouse-scroll-wheel$$', s: '$$mdi:arrow-down-thin$$', type: text_with_symbol}
+  - Mid-dot
+  - ''
+  - ''
+  - ''
+  - Gui
+  - Alt
+  - Shift
+  - Ctrl
+  - Studio Unlock
+  - ''
+  - ㅎkg
+  - ㅎg
+  - ㅎmg
+  - ㅎVAC
   - ESC
   - BT CLR ALL
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - BT CLR
-  - $$mdi:redo$$
-  - $$mdi:content-paste$$
-  - $$mdi:content-copy$$
-  - $$mdi:content-cut$$
-  - $$mdi:undo$$
+  - ㅎ±
+  - ㅎ℃
+  - ㅎ₩
+  - ㅎØ
+  - ㅎmm
   - $$mdi:keyboard-return$$
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
-  - $$mdi:cursor-default-click$$
-  - $$mdi:cursor-default-click-outline$$
-  - ''
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
 combos:
 - p: [1, 2]
   k: '@'
