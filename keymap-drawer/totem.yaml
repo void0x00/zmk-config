@@ -35,7 +35,7 @@ layers:
   - $$mdi:keyboard-return$$
   - ESC
   - {t: '$$mdi:keyboard-space$$', h: NAV}
-  - {t: '$$mdi:keyboard-tab$$', h: MSE}
+  - {t: '$$mdi:keyboard-tab$$', h: SYS}
   - {t: '$$mdi:keyboard-return$$', h: SYM}
   - {t: '$$mdi:backspace-outline$$', h: NUM}
   - $$mdi:backspace-reverse-outline$$
@@ -156,7 +156,7 @@ layers:
   - $$mdi:keyboard-return$$
   - $$mdi:backspace-outline$$
   - $$mdi:backspace-reverse-outline$$
-  MSE:
+  SYS:
   - Conn status
   - Batt level
   - BAT Save

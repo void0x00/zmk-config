@@ -455,8 +455,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:keyboard-tab"/>
-<a href="#MSE">
-<text x="0" y="24" class="key hold layer-activator">MSE</text>
+<a href="#SYS">
+<text x="0" y="24" class="key hold layer-activator">SYS</text>
 </a></g>
 <g transform="translate(470, 270) rotate(-30.0)" class="key keypos-35">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
@@ -1202,8 +1202,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1462)" class="layer-MSE">
-<text x="0" y="28" class="label" id="MSE">MSE</text>
+<g transform="translate(30, 1462)" class="layer-SYS">
+<text x="0" y="28" class="label" id="SYS">SYS</text>
 <g transform="translate(0, 56)">
 <g transform="translate(78, 113) rotate(-10.0)" class="key keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>

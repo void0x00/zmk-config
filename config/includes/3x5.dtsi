@@ -11,7 +11,7 @@
 #define NUM 1
 #define SYM 2
 #define NAV 3
-#define MSE 4
+#define SYS 4
 
 // totem 4 row additional keys
 #define L_EXP ESC
@@ -33,7 +33,7 @@
               &kp Q,         &kp W,         &kp E,         &kp R,         &kp T,             &kp Y,         &kp U,         &kp I,         &kp O,         &kp P, \
               &aml M_PNK A,  &aml M_RNG S,  &asl M_MDL D,  &aml M_IDX F,  &kp G,             &kp H,         &amr M_IDX J,  &asr M_MDL K,  &amr M_RNG L,  &aml M_PNK SQT, \
 &kp L_EXP,    &kp Z,         &kp X,         &kp C,         &kp V,         &kp B,             &kp N,         &kp M,         &ht RS(SPACE) COMMA, &mt RALT DOT, &kp SLASH, &kp R_EXP, \
-                                            &kp ESC,       &lt NAV SPACE, &lt MSE TAB,       &lt SYM RET,   &lt NUM BSPC,  &kp DEL \
+                                            &kp ESC,       &lt NAV SPACE, &lt SYS TAB,       &lt SYM RET,   &lt NUM BSPC,  &kp DEL \
 //                                         ╰─────────────┴──────────────┴──────────────╯    ╰──────────────┴──────────────┴──────────────╯
             )>;
         };
@@ -74,8 +74,8 @@
             )>;
         };
 
-        mouse_layer {
-            display-name = "MSE";
+        system_layer {
+            display-name = "SYS";
             bindings = <LAYER_FROM38( \
 //           ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
               &ind_con,      &ind_bat,      &soft_off,     &kp LG(L),     &sleep,            &kp K_APP,     &uni_mdot,     &none,         &none,         &none, \

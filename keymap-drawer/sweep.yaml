@@ -31,7 +31,7 @@ layers:
   - {t: ., h: RAlt}
   - /
   - {t: '$$mdi:keyboard-space$$', h: NAV}
-  - {t: '$$mdi:keyboard-tab$$', h: MSE}
+  - {t: '$$mdi:keyboard-tab$$', h: SYS}
   - {t: '$$mdi:keyboard-return$$', h: SYM}
   - {t: '$$mdi:backspace-outline$$', h: NUM}
   NUM:
@@ -139,7 +139,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:keyboard-return$$
   - $$mdi:backspace-outline$$
-  MSE:
+  SYS:
   - Conn status
   - Batt level
   - BAT Save
