@@ -60,11 +60,11 @@ layers:
   - '2'
   - '3'
   - \
-  - $$mdi:redo$$
-  - $$mdi:content-paste$$
-  - $$mdi:content-copy$$
-  - $$mdi:content-cut$$
-  - $$mdi:undo$$
+  - STOP
+  - $$mdi:skip-backward$$
+  - $$mdi:skip-forward$$
+  - $$mdi:volume-minus$$
+  - $$mdi:volume-plus$$
   - '0'
   - '-'
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -133,8 +133,8 @@ layers:
   - Sel-All
   - Sel-Line
   - Sel-Word
-  - $$mdi:volume-minus$$
-  - $$mdi:volume-plus$$
+  - ''
+  - ''
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:keyboard-return$$
@@ -207,7 +207,10 @@ combos:
   l: [DEF]
 - p: [29, 28]
   k: $$mdi:volume-mute$$
-  l: [NAV]
+  l: [NUM]
+- p: [27, 26]
+  k: $$mdi:play-pause$$
+  l: [NUM]
 - p: [13, 16]
   k: Caps Word
   l: [DEF]
