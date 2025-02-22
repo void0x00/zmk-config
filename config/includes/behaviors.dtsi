@@ -89,12 +89,5 @@
             flavor = "tap-preferred";
             bindings = <&ind_con>, <&ind_bat>;
         };
-        o_tog: o_tog {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <500>;
-            flavor = "tap-preferred";
-            bindings = <&out>, <&out>;
-        };
     };
 };
