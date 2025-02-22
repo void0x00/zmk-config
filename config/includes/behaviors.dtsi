@@ -89,7 +89,7 @@
             flavor = "tap-preferred";
             bindings = <&ind_con>, <&ind_bat>;
         };
-        usb_ble: usb_ble {
+        o_tog: o_tog {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <500>;
