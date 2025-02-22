@@ -7,9 +7,19 @@
     tapping-term-ms = <150>;
 };
 
+&sk {
+  release-after-ms = <900>;
+  quick-release;
+};
+
+&sl { // Allow sticky mods to chord across sticky layers.
+  ignore-modifiers;
+};
+
 &lt {
-    flavor = "balanced";
-    tapping-term-ms = <150>;
+  flavor = "balanced";
+  tapping-term-ms = <200>;
+  quick-tap-ms = <QUICK_TAP_MS>;
 };
 
 &caps_word {
