@@ -167,8 +167,8 @@ layers:
   - ''
   - ''
   - '&rst_boot'
-  - {t: '$$mdi:bluetooth$$', h: '$$mdi:usb$$'}
-  - ''
+  - $$mdi:usb$$
+  - $$mdi:bluetooth$$
   - ''
   - ''
   - Studio Unlock
