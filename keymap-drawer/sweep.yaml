@@ -140,8 +140,8 @@ layers:
   - $$mdi:keyboard-return$$
   - $$mdi:backspace-outline$$
   SYS:
-  - Conn status
-  - Batt level
+  - '&rst_boot'
+  - '&con_bat'
   - BAT Save
   - Lock
   - Sleep
@@ -149,11 +149,11 @@ layers:
   - Mid-dot
   - ''
   - ''
+  - '&rst_boot'
+  - {t: '$$mdi:bluetooth$$', h: '$$mdi:usb$$'}
   - ''
-  - Gui
-  - Alt
-  - Shift
-  - Ctrl
+  - ''
+  - ''
   - Studio Unlock
   - ''
   - ㅎkg

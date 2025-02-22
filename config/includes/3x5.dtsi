@@ -78,8 +78,8 @@
             display-name = "SYS";
             bindings = <LAYER_FROM38( \
 //           ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
-              &ind_con,      &ind_bat,      &soft_off,     &kp LG(L),     &sleep,            &kp K_APP,     &uni_mdot,     &none,         &none,         &none, \
-              &kp M_PNK,     &kp M_RNG,     &kp M_MDL,     &kp M_IDX,     &studio_unlock,    &none,         &hwp_kg,       &hwp_grm,      &hwp_mg,       &hwp_vac, \
+              &rst_boot,     &con_bat,      &soft_off,     &kp LG(L),     &sleep,            &kp K_APP,     &uni_mdot,     &none,         &none,         &rst_boot, \
+              &o_tog OUT_USB OUT_BLE, &none, &none,        &none,         &studio_unlock,    &none,         &hwp_kg,       &hwp_grm,      &hwp_mg,       &hwp_vac, \
 &kp L_EXP,    &bt BT_CLR_ALL, &bt BT_SEL 0, &bt BT_SEL 1,  &bt BT_SEL 2,  &bt BT_CLR,        &hwp_pm,       &hwp_tmp,      &hwp_won,      &hwp_phi,      &hwp_mm,        &kp R_EXP, \
                                             &trans,        &trans,        &trans,            &trans,        &trans,        &trans \
 //                                         ╰──────────────┴──────────────┴──────────────╯   ╰──────────────┴──────────────┴──────────────╯
