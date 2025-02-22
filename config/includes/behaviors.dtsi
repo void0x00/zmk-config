@@ -26,7 +26,7 @@
     continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
 };
 
-// Tap: num-word | double-tap: sticky num-layer | Hold: num-layer.
+// Tap: num-word -> &kp BSPC | double-tap: sticky num-layer -> num-word | Hold: num-layer.
 #define SMART_NUM &smart_num NUM 0
 ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
