@@ -10,16 +10,16 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: Gui}
-  - {t: S, h: Alt}
-  - {t: D, h: Shift}
-  - {t: F, h: Ctrl}
+  - '&aml LGUI A'
+  - '&aml LALT S'
+  - '&asl LSHFT D'
+  - '&aml LCTRL F'
   - G
   - H
-  - {t: J, h: Ctrl}
-  - {t: K, h: Shift}
-  - {t: L, h: Alt}
-  - {t: '''', h: Gui}
+  - '&amr LCTRL J'
+  - '&asr LSHFT K'
+  - '&amr LALT L'
+  - '&aml LGUI SQT'
   - Z
   - X
   - C
@@ -27,13 +27,13 @@ layers:
   - B
   - N
   - M
-  - {t: ',', h: 'Sft+$$mdi:keyboard-space$$'}
+  - '&ht RS(SPACE) COMMA'
   - {t: ., h: RAlt}
   - /
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - {t: '$$mdi:keyboard-tab$$', h: SYS}
   - {t: '$$mdi:keyboard-return$$', h: SYM}
-  - {t: '$$mdi:backspace-outline$$', h: NUM}
+  - '&smart_num 1 BSPC'
   NUM:
   - '['
   - '7'
@@ -68,7 +68,7 @@ layers:
   - '0'
   - '-'
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   SYM:
   - '{'
   - '&'
@@ -109,7 +109,7 @@ layers:
   - TaskSW →
   - Tab Left
   - Tab Right
-  - {t: Tab Close, h: Win Close}
+  - '&ht LA(F4) LC(F4)'
   - INS
   - HOME
   - $$mdi:arrow-up$$
