@@ -75,5 +75,26 @@
             bindings = <&kp>;
             release-after-ms = <500>;
         };
+        rst_boot: rst_boot {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            flavor = "tap-preferred";
+            bindings = <&bootloader>, <&sys_reset>;
+        };
+        con_bat: con_bat {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            flavor = "tap-preferred";
+            bindings = <&ind_con>, <&ind_bat>;
+        };
+        usb_ble: usb_ble {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            flavor = "tap-preferred";
+            bindings = <&out OUT_USB>, <&out OUT_BLE>;
+        };
     };
 };
