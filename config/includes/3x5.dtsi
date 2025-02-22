@@ -6,6 +6,9 @@
 // #include <dt-bindings/zmk/ext_power.h>
 #include <behaviors/rgbled_widget.dtsi>
 
+#include <behaviors/num_word.dtsi> // Requires auto-layer module.
+#include "zmk-helpers/helper.h"
+
 // Layer aliases
 #define DEF 0
 #define NUM 1
