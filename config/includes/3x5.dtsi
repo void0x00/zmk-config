@@ -33,7 +33,7 @@
               &kp Q,         &kp W,         &kp E,         &kp R,         &kp T,             &kp Y,         &kp U,         &kp I,         &kp O,         &kp P, \
               &kp Q,         &kp W,         &kp E,         &kp R,         &kp T,             &kp Y,         &kp U,         &kp I,         &kp O,         &kp P, \
 &kp L_EXP,    &kp Q,         &kp W,         &kp E,         &kp R,         &kp T,             &kp Y,         &kp U,         &kp I,         &kp O,         &kp P,         &kp R_EXP, \
-                                            &kp ESC,       &lt NAV SPACE, &lt MSE TAB,       &lt SYM RET,   &lt NUM BSPC,  &kp DEL \
+                                            &kp ESC,       &kp ESC,       &kp ESC,           &kp ESC,       &kp ESC,      &kp DEL \
 //                                         ╰─────────────┴──────────────┴──────────────╯    ╰──────────────┴──────────────┴──────────────╯
             )>;
         };
