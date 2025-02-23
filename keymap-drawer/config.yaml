@@ -192,13 +192,7 @@ parse_config:
 
     
   zmk_combos:
-    combo_star:   {align: right}
     combo_ret:    {o: -0.25}
-    combo_sleep:  {align: top, o: 0.25}
-    combo_soft:   {align: top, o: 0.40}
-    combo_lock:   {align: top}
-    combo_batt:   {align: top}
-    combo_conn:   {align: top}
 
       
   zmk_keycode_map:
