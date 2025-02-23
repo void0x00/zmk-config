@@ -1,179 +1,348 @@
-# configuration for https://github.com/caksoylar/keymap-drawer
-parse_config:
-  raw_binding_map:
-    '&sys_reset': Reset
-    '&bootloader': Boot
-    '&swapper': Win Next
-    '&caps_word': Caps Word
-    '&inv_qm': ¿
-    '&ind_bat': Show Batt
-    '&ind_con': Show Conn
+draw_config:
+  append_colon_to_layer_header: false
+  draw_key_sides: true
 
+  svg_extra_style: |
+    svg.keymap {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+    }
+ 
+    text.label {
+      stroke: #dfdfde;
+      stroke-width: 12;
+      stroke-linejoin: round;
+    }
+
+    rect.combo, rect.combo-separate {
+      opacity: 1.00;
+      stroke: #c9cccf;
+      stroke-width: 0.5;
+      fill: #d7eaed;
+    }
+    path.combo {
+      stroke-dasharray: 0, 0;
+      stroke-opacity: 1.00;
+    }
+
+    rect.held, rect.combo.held {
+      fill: #ebdada;
+    }
+
+    .trans.tap, .ghost.tap {
+      opacity: 0.5;
+    }
+
+    .shifted {
+      translate: -9px 3px;
+      opacity: 0.3;
+    }
+
+    .toggle.shifted {
+      translate: -12px 17px;
+      opacity: 1.0;
+    }
+    .toggle.hold {
+      translate: 12px -25px;
+    }
+
+    .text_with_symbol.tap {
+      translate: -1px 1px;
+    }
+    .text_with_symbol.shifted {
+      translate: 8px 13px;
+      font-size: 8px;
+      opacity: 1.0;
+    } 
+
+    .combo.text_with_symbol.tap {
+      translate: -1px 1px;
+    }
+    .combo.text_with_symbol.shifted {
+      translate: 7px 5px;
+      font-size: 8px;
+      opacity: 1.0;
+    }
+  
+  glyph_tap_size: 14
+  glyph_hold_size: 8
+  glyph_shifted_size: 8
+  
+
+parse_config:
+  zmk_remove_keycode_prefix: ["DE_"]
+    
+  sticky_label: $$mdi:circle-small$$
+  toggle_label: $$mdi:toggle-switch$$
+  trans_legend:
+    tap: $$mdi:chevron-down$$
+    type: trans
+
+
+  raw_binding_map: 
+    '&sys_reset': $$mdi:backup-restore$$
+    '&bootloader': $$mdi:progress-download$$
+    '&caps_word': Caps Word
+    '&alt_tabber': $$mdi:swap-horizontal$$
+   
+    '&out OUT_BLE': $$mdi:bluetooth$$
+    '&out OUT_USB': $$mdi:usb$$
+    '&out OUT_TOG':
+      tap: $$mdi:toggle-switch$$
+      hold: $$mdi:bluetooth$$
+      shifted: $$mdi:usb$$
+      type: toggle
+    
+    '&bt BT_CLR': BT CLR
+    '&bts_0':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '0'
+      type: text_with_symbol
+    '&bts_1':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '1'
+      type: text_with_symbol
+    '&bts_2':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '2'
+      type: text_with_symbol
+    '&bts_3':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '3'
+      type: text_with_symbol
+    '&bts_4':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '4'
+      type: text_with_symbol
+    
+    '&mkp LCLK': $$mdi:cursor-default-click-outline$$
+    '&mkp RCLK': $$mdi:cursor-default-click$$
+    '&mkp MB3':
+      tap: $$mdi:cursor-default-click-outline$$
+      shifted: 3
+      type: text_with_symbol
+    '&mkp MB4':
+      tap: $$mdi:cursor-default-click-outline$$
+      shifted: 4
+      type: text_with_symbol
+    '&mkp MB5':
+      tap: $$mdi:cursor-default-click-outline$$
+      shifted: 5
+      type: text_with_symbol
+
+    '&mmv MOVE_UP':
+      tap: $$mdi:mouse-outline$$
+      shifted: $$mdi:arrow-up$$
+      type: text_with_symbol
+    '&mmv MOVE_DOWN':
+      tap: $$mdi:mouse-outline$$
+      shifted: $$mdi:arrow-down$$
+      type: text_with_symbol
+    '&mmv MOVE_LEFT':
+      tap: $$mdi:mouse-outline$$
+      shifted: $$mdi:arrow-left$$
+      type: text_with_symbol
+    '&mmv MOVE_RIGHT':
+      tap: $$mdi:mouse-outline$$
+      shifted: $$mdi:arrow-right$$
+      type: text_with_symbol
+
+    '&msc SCRL_UP':
+      tap: $$mdi:mouse-scroll-wheel$$
+      shifted: $$mdi:arrow-up-thin$$
+      type: text_with_symbol
+    '&msc SCRL_DOWN':
+      tap: $$mdi:mouse-scroll-wheel$$
+      shifted: $$mdi:arrow-down-thin$$
+      type: text_with_symbol
+    '&msc SCRL_LEFT':
+      tap: $$mdi:mouse-scroll-wheel$$
+      shifted: $$mdi:arrow-left-thin$$
+      type: text_with_symbol
+    '&msc SCRL_RIGHT':
+      tap: $$mdi:mouse-scroll-wheel$$
+      shifted: $$mdi:arrow-right-thin$$
+      type: text_with_symbol
+      
     '&kp LC(TAB)': Tab Right
     '&kp LC(LS(TAB))': Tab Left
+    '&kp LA(TAB)': TaskSW →
+    '&kp LA(LS(TAB))': TaskSW ←
     '&kp LA(F4)': Win Close
     '&kp LC(F4)': Tab Close
-    '&kp LS(TAB)': Win Prev
-    '&kp LS(INS)': Paste
-    '&kp LC(C)': Copy
-    '&kp LC(X)': Cut
-    '&kp LC(Z)': Undo
     '&kp LG(L)': Lock
+    '&sleep': Sleep
+    '&soft_off': BAT Save
+    '&hwp_won': ㅎ₩
+    '&hwp_tmp': ㅎ℃
+    '&hwp_pm': ㅎ±
+    '&hwp_phi': ㅎØ
+    '&hwp_kg': ㅎkg
+    '&hwp_grm': ㅎg
+    '&hwp_mg': ㅎmg
+    '&hwp_vac': ㅎVAC
+    '&hwp_mm': ㅎmm
+    '&uni_mdot': Mid-dot
+    '&sel_ln': Sel-Line
+    '&sel_wrd': Sel-Word
+    '&studio_unlock' : Studio Unlock
+    '&ind_con': Conn status
+    '&ind_bat': Batt level
 
-    '&out OUT_USB': Out USB
-    '&out OUT_BLE': Out BLE
-
-    '&bt BT_SEL 0': BT 1
-    '&bt BT_SEL 1': BT 2
-    '&bt BT_SEL 2': BT 3
-    '&bt BT_SEL 3': BT 4
-    '&bt BT_SEL 4': BT 5
-
-    '&mmv MOVE_UP': Mouse ↑
-    '&mmv MOVE_DOWN': Mouse ↓
-    '&mmv MOVE_LEFT': Mouse ←
-    '&mmv MOVE_RIGHT': Mouse →
-
-    '&msc SCRL_UP': Scroll ↑
-    '&msc SCRL_DOWN': Scroll ↓
-    '&msc SCRL_LEFT': Scroll ←
-    '&msc SCRL_RIGHT': Scroll →
-
-    '&mkp LCLK': Left Click
-    '&mkp RCLK': Right Click
-    '&mkp MCLK': Middle Click
-    '&mkp MB4': Back Click
-    '&mkp MB5': Forward Click
-
+    
   zmk_combos:
-    combo_tab:    {align: top, o: 0.15}
-    combo_del:    {align: top, o: 0.15}
-    combo_btclr:  {align: bottom}
-    combo_undo:   {align: bottom}
-    combo_play:   {align: right}
-    combo_calc:   {align: left}
-    combo_capswd: {draw_separate: true}
-    combo_semi:   {draw_separate: true}
-    combo_grave:  {draw_separate: true}
-    combo_lpar:   {draw_separate: true}
-    combo_rpar:   {draw_separate: true}
-    combo_lbkt:   {draw_separate: true}
-    combo_rbkt:   {draw_separate: true}
-    combo_tab:    {draw_separate: true}
-    combo_del:    {draw_separate: true}
-    combo_esc:    {draw_separate: true}
-    combo_ret:    {draw_separate: true}
-    combo_lock:   {draw_separate: true}
-    combo_bslh:   {draw_separate: true}
-    combo_slsh:   {draw_separate: true}
-    combo_indbat: {align: top, o: 0.25}
-    combo_indcon: {align: top}
+    combo_star:   {align: right}
+    combo_ret:    {o: -0.25}
+    combo_sleep:  {align: top, o: 0.25}
+    combo_soft:   {align: top, o: 0.40}
+    combo_lock:   {align: top}
+    combo_batt:   {align: top}
+    combo_conn:   {align: top}
 
+      
   zmk_keycode_map:
-    # custom mappings
-    C_VOL_UP: Vol Up
-    C_VOL_DN: Vol Down
-    C_AL_CALC: Calc
-    C_PP: Play Pause
 
-    LCTRL: Ctrl
-    RCTRL: Ctrl
+    LC(INS): $$mdi:content-copy$$
+    LC(C): $$mdi:content-copy$$
+    LS(INS): $$mdi:content-paste$$
+    LC(V): $$mdi:content-paste$$
+    LS(DEL): $$mdi:content-cut$$
+    LC(X): $$mdi:content-cut$$
+    LC(Z): $$mdi:undo$$
+    LC(Y): $$mdi:redo$$
+
+    LC(A): Sel-All
+    LC(F): $$mdi:text-search$$
+    LC(W): $$mdi:close-box-outline$$
+    LA(F4)': $$mdi:close-box-outline$$
+    
     LALT: Alt
-    RALT: Alt
+    RALT: RAlt
+    
+    SPACE: $$mdi:keyboard-space$$
+    # ESC: $$mdi:keyboard-esc$$
+
+    RETURN: $$mdi:keyboard-return$$
+    RET: $$mdi:keyboard-return$$
+    
+    BACKSPACE: $$mdi:backspace-outline$$
+    BSPC: $$mdi:backspace-outline$$
+    
+    DELETE: $$mdi:backspace-reverse-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
+    
+    LCTRL: Ctrl
+    RCTRL: RCtrl
+    
+    LSHFT:  Shift
+    LSHIFT:  Shift
+    
+    RSHFT: Shift
+    RSHIFT: Shift
+
     LGUI: Gui
     RGUI: Gui
-    LSHFT: Shift
-    RSHFT: Shift
-    ESC: Esc
-    SPACE: ␣
-    BSPC: ⌫
-    RET: ⏎
-    TAB: ↹
-    DEL: ⌦
+    
+    TAB: $$mdi:keyboard-tab$$
 
-    PG_UP: Page Up
-    PG_DN: Page Down
-    INS: Insert
-    HOME: Home
-    END: End
     CAPS: Caps Lock
+    CAPSLOCK: Caps Lock
+
+    SCROLLLOCK: Scroll Lock
+    SLCK: Scroll Lock
+
+    KP_NLCK: $$mdi:numeric-off$$
+
     PSCRN: Print Scrn
     PAUSE_BREAK: Pause Break
-
-    UP: ↑
-    DOWN: ↓
-    LEFT: ←
-    RIGHT: →
-
-    C_PP: ⏯
-    C_NEXT: ⏭️
-    C_PREV: ⏮️
-
-    # defaults
+    
+    C_PP: $$mdi:play-pause$$
+    C_NEXT: $$mdi:skip-forward$$
+    C_PREV: $$mdi:skip-backward$$
+    
+    C_MUTE: $$mdi:volume-mute$$
+    C_VOL_UP: $$mdi:volume-plus$$
+    C_VOL_DN: $$mdi:volume-minus$$
+    
+    C_BRI_UP: $$phosphor:bold/sun$$
+    C_BRI_DN: $$phosphor:bold/sun-dim$$
+    
+    C_POWER: $$mdi:power$$
+    C_SLEEP: $$mdi:power-sleep$$
+    C_AL_CALC: $$mdi:calculator$$
+    
+    UP: $$mdi:arrow-up$$
+    DOWN: $$mdi:arrow-down$$
+    LEFT: $$mdi:arrow-left$$
+    RIGHT: $$mdi:arrow-right$$
+    
+    PG_UP: Page Up
+    PG_DN: Page Down
+    
+    # default
+    EXCLAMATION: '!'
+    EXCL: '!'
+    AT_SIGN: '@'
+    AT: '@'
+    HASH: '#'
+    POUND: '#'
+    DOLLAR: $
+    DLLR: $
+    PERCENT: '%'
+    PRCNT: '%'
+    CARET: ^
     AMPERSAND: '&'
     AMPS: '&'
-    APOS: "'"
-    APOSTROPHE: "'"
     ASTERISK: '*'
     ASTRK: '*'
-    AT: '@'
-    AT_SIGN: '@'
-    BACKSLASH: \
-    BSLH: \
-    CARET: ^
-    COLON: ':'
-    COMMA: ','
-    DLLR: $
-    DOLLAR: $
-    DOT: .
-    DOUBLE_QUOTES: '"'
-    DQT: '"'
-    EQUAL: '='
-    EXCL: '!'
-    EXCLAMATION: '!'
-    FSLH: /
-    GRAVE: '`'
-    GREATER_THAN: '>'
-    GT: '>'
-    HASH: '#'
-    LBKT: '['
-    LBRC: '{'
-    LEFT_BRACE: '{'
-    LEFT_BRACKET: '['
+    STAR: '*'
     LEFT_PARENTHESIS: (
-    LESS_THAN: <
     LPAR: (
-    LT: <
-    MINUS: '-'
-    NON_US_BACKSLASH: \
-    NON_US_BSLH: '|'
-    NON_US_HASH: '#'
-    NUHS: '#'
-    PERCENT: '%'
-    PERIOD: .
-    PIPE: '|'
-    PIPE2: '|'
-    PLUS: +
-    POUND: '#'
-    PRCNT: '%'
-    QMARK: '?'
-    QUESTION: '?'
-    RBKT: ']'
-    RBRC: '}'
-    RIGHT_BRACE: '}'
-    RIGHT_BRACKET: ']'
     RIGHT_PARENTHESIS: )
     RPAR: )
-    SEMI: ;
-    SEMICOLON: ;
-    SINGLE_QUOTE: ''''
-    SLASH: /
-    SQT: ''''
-    STAR: '*'
-    TILDE: '~'
-    TILDE2: '~'
-    UNDER: _
+    EQUAL: '='
+    PLUS: +
+    MINUS: '-'
     UNDERSCORE: _
-draw_config:
-  footer_text: 'Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
-  dark_mode: auto
+    UNDER: _
+    SLASH: /
+    FSLH: /
+    QUESTION: '?'
+    QMARK: '?'
+    BACKSLASH: \
+    BSLH: \
+    PIPE: '|'
+    NON_US_BACKSLASH: \
+    PIPE2: '|'
+    NON_US_BSLH: '|'
+    SEMICOLON: ;
+    SEMI: ;
+    COLON: ':'
+    SINGLE_QUOTE: ''''
+    SQT: ''''
+    APOSTROPHE: ''''
+    APOS: ''''
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    COMMA: ','
+    LESS_THAN: <
+    LT: <
+    PERIOD: .
+    DOT: .
+    GREATER_THAN: '>'
+    GT: '>'
+    LEFT_BRACKET: '['
+    LBKT: '['
+    LEFT_BRACE: '{'
+    LBRC: '{'
+    RIGHT_BRACKET: ']'
+    RBKT: ']'
+    RIGHT_BRACE: '}'
+    RBRC: '}'
+    GRAVE: '`'
+    TILDE: '~'
+    NON_US_HASH: '#'
+    NUHS: '#'
+    TILDE2: '~'
+    
