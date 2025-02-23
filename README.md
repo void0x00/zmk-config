@@ -7,7 +7,7 @@ Totem Bluethooth(Xiao_ble) or Dongle(Xiao_ble), Studio available.
 ## Modules
 
 Additional features are provided by the following [modules](https://zmk.dev/docs/features/modules): <br />
-
+- [**zmk-auto-layer**](https://github.com/urob/zmk-auto-layer) A layer activated by the behavior continues to be active for as long as keys in a configurable continue-list are pressed, and deactivates automatically on any other key press.
 - [**zmk-dongle-display**](https://github.com/englmaxi/zmk-dongle-display) to show the peripheral battery percentage (and more!) on the display of my dongle. <br />
 - [**zmk-rgbled-widgets**](https://github.com/caksoylar/zmk-rgbled-widget) to show the connection and battery status with the built-in LEDs of the Xiao BLE controller. Based on this, the module was adapted in [led_indicator](boards/shields/led_indicator) to be used with the single LED of the nice!nano.
 
