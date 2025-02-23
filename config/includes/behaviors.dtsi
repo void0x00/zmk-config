@@ -30,7 +30,7 @@
 #define SMART_NUM &smart_num NUM 0
 ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
-ZMK_TAP_DANCE(num_dance, bindings = <&kp BSPS>, <&num_word NUM>;
+ZMK_TAP_DANCE(num_dance, bindings = <BSPS>, <&num_word NUM>;
               tapping-term-ms = <200>;)
 
 / {
