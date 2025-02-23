@@ -18,7 +18,7 @@
 #define R_EXP RET
 
 #include "shortcut.dtsi"
-#include "combos.dtsi"
+// #include "combos.dtsi"
 #include "mouse.dtsi"
 #include "behaviors.dtsi"
 #include "macros.dtsi"
