@@ -165,9 +165,9 @@ parse_config:
       shifted: $$mdi:arrow-right-thin$$
       type: text_with_symbol
 
-   '&aml M_PNK A':
-      tap: A
-      shifted: LGUI
+   '&aml LGUI A':
+      tap: 'A'
+      shifted: 'LGUI'
       type: text_with_symbol
    '&amr LGUI SQT':
       tap: SQT
