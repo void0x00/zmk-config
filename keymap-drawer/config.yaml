@@ -165,50 +165,7 @@ parse_config:
       shifted: $$mdi:arrow-right-thin$$
       type: text_with_symbol
 
-   '&aml LGUI A':
-      tap: 'A'
-      shifted: 'LGUI'
-      type: text_with_symbol
-   '&amr LGUI SQT':
-      tap: SQT
-      shifted: LGUI
-      type: text_with_symbol
-   '&aml LALT S':
-      tap: S
-      shifted: LALT
-      type: text_with_symbol
-   '&amr LALT L':
-      tap: L
-      shifted: LALT
-      type: text_with_symbol
-    '&aml LCTRL F':
-      tap: F
-      shifted: CTRL
-      type: text_with_symbol
-    '&amr LCTRL J':
-      tap: J
-      shifted: CTRL
-      type: text_with_symbol
-    '&asl LSHFT D':
-      tap: D
-      shifted: SHIFT
-      type: text_with_symbol
-    '&asr LSHFT K':
-      tap: K
-      shifted: SHIFT
-      type: text_with_symbol
-    '&num_layer_ht 0 BSPC':
-      tap: $$mdi:backspace-outline$$
-      shifted: NUM
-      type: text_with_symbol
-    '&nav_layer_ht 0 SPC':
-      tap: $$mdi:keyboard-space$$
-      shifted: NAV
-      type: text_with_symbol
-    '&mt_home 0   LEFT':
-      tap: $$mdi:arrow-left$$
-      shifted: HOME
-      type: text_with_symbol
+
     '&mt_end 0    RIGHT':
       tap: $$mdi:arrow-right$$
       shifted: END

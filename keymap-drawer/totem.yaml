@@ -20,7 +20,7 @@ layers:
   - '&amr LCTRL J'
   - '&asr LSHFT K'
   - '&amr LALT L'
-  - '&aml LGUI SQT'
+  - '&amr LGUI SQT'
   - ESC
   - Z
   - X
@@ -256,16 +256,17 @@ combos:
   k: Conn status
   l: [SYS]
   a: top
-- p: [2, 3]
+  o: 0.4
+- p: [12, 13]
   k: +
   l: [NUM]
-- p: [12, 13]
+- p: [2, 3]
   k: '-'
   l: [NUM]
 - p: [2, 13]
   k: '*'
   l: [NUM]
-  a: right
+  a: top
 - p: [12, 3]
   k: /
   l: [NUM]
