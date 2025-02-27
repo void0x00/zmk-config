@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - '&aml LGUI A'
-  - '&aml LALT S'
-  - '&asl LSHFT D'
-  - '&aml LCTRL F'
+  - {t: A, h: Gui}
+  - {t: S, h: Alt}
+  - {t: D, h: Shift}
+  - {t: F, h: Ctrl}
   - G
   - H
-  - '&amr LCTRL J'
-  - '&asr LSHFT K'
-  - '&amr LALT L'
-  - '&amr LGUI SQT'
+  - {t: J, h: Ctrl}
+  - {t: K, h: Shift}
+  - {t: L, h: Alt}
+  - {t: '''', h: Gui}
   - Z
   - X
   - C
@@ -28,34 +28,34 @@ layers:
   - B
   - N
   - M
-  - '&ht RS(SPACE) COMMA'
-  - {t: ., h: RAlt}
+  - {t: ',', h: Sft+Spc}
+  - {t: ., h: Alt}
   - /
-  - {t: '$$mdi:keyboard-space$$', s: NAV, type: text_with_symbol}
-  - {t: '$$mdi:keyboard-tab$$', h: SYS}
-  - {t: '$$mdi:keyboard-return$$', h: SYM}
-  - {t: '$$mdi:backspace-outline$$', s: NUM, type: text_with_symbol}
+  - {t: SPC, h: NAV}
+  - {t: Tab, h: SYS}
+  - {t: Enter, h: SYM}
+  - {t: Bspc, h: NUM}
   NUM:
-  - '['
+  - {t: '[', right: '{'}
   - '7'
   - '8'
   - '9'
-  - ']'
-  - $$mdi:calculator$$
-  - $$mdi:cursor-default-click-outline$$
-  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-up$$', type: text_with_symbol}
-  - $$mdi:cursor-default-click$$
-  - {t: '$$mdi:mouse-scroll-wheel$$', s: '$$mdi:arrow-up-thin$$', type: text_with_symbol}
+  - {t: ']', right: '}'}
+  - AL CALC
+  - Left Click
+  - Mouse ↑
+  - Right Click
+  - Scroll ↑
   - ;
   - '4'
   - '5'
   - '6'
   - '='
-  - {t: NAV, h: '$$mdi:toggle-switch$$'}
-  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-left$$', type: text_with_symbol}
-  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-down$$', type: text_with_symbol}
-  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-right$$', type: text_with_symbol}
-  - {t: '$$mdi:mouse-scroll-wheel$$', s: '$$mdi:arrow-down-thin$$', type: text_with_symbol}
+  - {t: NAV, h: toggle}
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - Scroll ↓
   - '`'
   - '1'
   - '2'
@@ -64,19 +64,19 @@ layers:
   - STOP
   - $$mdi:skip-backward$$
   - $$mdi:skip-forward$$
-  - $$mdi:volume-minus$$
-  - $$mdi:volume-plus$$
+  - $$mdi:volume-medium$$
+  - $$mdi:volume-high$$
   - '0'
   - '-'
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: trans}
+  - {type: held}
   SYM:
   - '{'
   - '&'
   - '*'
   - (
   - '}'
-  - Print Scrn
+  - PSCRN
   - F7
   - F8
   - F9
@@ -86,7 +86,7 @@ layers:
   - {t: '%', h: Shift}
   - {t: ^, h: Ctrl}
   - +
-  - Scroll Lock
+  - SLCK
   - F4
   - F5
   - F6
@@ -96,7 +96,7 @@ layers:
   - '@'
   - '#'
   - '|'
-  - Pause Break
+  - PAUSE BREAK
   - F1
   - F2
   - F3
@@ -104,77 +104,77 @@ layers:
   - )
   - _
   - {type: held}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: trans}
   NAV:
-  - TaskSW ←
-  - TaskSW →
-  - Tab Left
-  - Tab Right
-  - '&ht LA(F4) LC(F4)'
-  - INS
-  - {t: '$$mdi:backspace-outline$$', h: 'Ctl+$$mdi:backspace-outline$$'}
-  - {t: '$$mdi:arrow-up$$', h: Ctl+HOME}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
-  - Page Up
+  - Alt+Sft+Tab
+  - Alt+Tab
+  - Ctl+Sft+Tab
+  - Ctl+Tab
+  - {t: Ctl+F4, h: Alt+F4}
+  - Ins
+  - {t: Bspc, h: Ctl+Bspc}
+  - {t: ↑, h: Ctl+Home}
+  - {t: Del, h: Ctl+Del}
+  - PgUp
   - Gui
   - Alt
   - Shift
   - Ctrl
-  - {t: NUM, h: '$$mdi:toggle-switch$$'}
-  - Caps Lock
-  - '&mt_home 0 LEFT'
-  - {t: '$$mdi:arrow-down$$', h: Ctl+END}
-  - '&mt_end 0 RIGHT'
-  - Page Down
-  - $$mdi:undo$$
-  - $$mdi:content-cut$$
-  - $$mdi:content-copy$$
-  - $$mdi:content-paste$$
-  - $$mdi:redo$$
+  - {t: NUM, h: toggle}
+  - CAPS
+  - {t: ←, h: Home}
+  - {t: ↓, h: Ctl+End}
+  - {t: →, h: End}
+  - PgDn
+  - Ctl+Z
+  - Cut
+  - Ctl+C
+  - Ctl+V
+  - Ctl+Y
   - APP
-  - '&ht HOME END'
+  - {t: End, h: Home}
   - ''
   - ''
   - ''
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - $$mdi:keyboard-return$$
-  - $$mdi:backspace-outline$$
+  - {type: held}
+  - {type: trans}
+  - Enter
+  - Bspc
   SYS:
   - '&rst_boot'
   - ''
-  - BAT Save
-  - Lock
-  - Sleep
+  - '&soft_off'
+  - Gui+L
+  - '&sleep'
   - ''
-  - Mid-dot
+  - '&uni_mdot'
   - ''
   - ''
   - '&rst_boot'
-  - $$mdi:usb$$
-  - $$mdi:bluetooth$$
+  - OUT USB
+  - OUT BLE
   - ''
   - ''
-  - Studio Unlock
+  - '&studio_unlock'
   - ''
-  - ㅎkg
-  - ㅎg
-  - ㅎmg
-  - ㅎVAC
+  - '&hwp_kg'
+  - '&hwp_grm'
+  - '&hwp_mg'
+  - '&hwp_vac'
   - BT CLR ALL
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
+  - BT 1
+  - BT 2
+  - BT 3
   - BT CLR
-  - ㅎ±
-  - ㅎ℃
-  - ㅎ₩
-  - ㅎØ
-  - ㅎmm
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - '&hwp_pm'
+  - '&hwp_tmp'
+  - '&hwp_won'
+  - '&hwp_phi'
+  - '&hwp_mm'
+  - {type: trans}
   - {type: held}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: trans}
+  - {type: trans}
 combos:
 - p: [1, 2]
   k: '@'
@@ -183,13 +183,13 @@ combos:
   k: '#'
   l: [DEF]
 - p: [0, 1]
-  k: ESC
+  k: Esc
   l: [DEF]
 - p: [7, 8]
-  k: $$mdi:backspace-reverse-outline$$
+  k: Del
   l: [DEF]
 - p: [6, 7]
-  k: $$mdi:backspace-outline$$
+  k: Bspc
   l: [DEF]
 - p: [12, 13]
   k: (
@@ -198,18 +198,17 @@ combos:
   k: )
   l: [DEF]
 - p: [11, 12]
-  k: '['
+  k: {t: '[', right: '{'}
   l: [DEF]
 - p: [17, 18]
-  k: ']'
+  k: {t: ']', right: '}'}
   l: [DEF]
 - p: [11, 13]
-  k: $$mdi:keyboard-tab$$
+  k: Tab
   l: [DEF, NAV]
 - p: [18, 16]
-  k: $$mdi:keyboard-return$$
+  k: Enter
   l: [DEF, NAV]
-  o: -0.25
 - p: [26, 27]
   k: ;
   l: [DEF]
@@ -217,7 +216,7 @@ combos:
   k: ':'
   l: [DEF]
 - p: [29, 28]
-  k: $$mdi:volume-mute$$
+  k: $$mdi:volume-off$$
   l: [NUM]
 - p: [27, 26]
   k: $$mdi:play-pause$$
@@ -226,17 +225,14 @@ combos:
   k: Caps Word
   l: [DEF]
 - p: [14, 15]
-  k: {t: DEF, h: '$$mdi:toggle-switch$$'}
+  k: {t: DEF, h: toggle}
   l: [NUM, NAV]
 - p: [4, 5]
-  k: Batt level
+  k: '&ind_bat'
   l: [SYS]
-  a: top
 - p: [3, 6]
-  k: Conn status
+  k: '&ind_con'
   l: [SYS]
-  a: top
-  o: 0.4
 - p: [12, 13]
   k: +
   l: [NUM]
@@ -246,7 +242,6 @@ combos:
 - p: [2, 13]
   k: '*'
   l: [NUM]
-  a: top
 - p: [12, 3]
   k: /
   l: [NUM]
@@ -257,5 +252,5 @@ combos:
   k: .
   l: [NUM]
 - p: [11, 12, 13]
-  k: $$mdi:keyboard-return$$
+  k: Enter
   l: [NUM]
