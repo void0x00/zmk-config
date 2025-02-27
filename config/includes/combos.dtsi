@@ -56,7 +56,7 @@ COMBO(conn,   &ind_con,    LT1 RT1,     SYS,          COMBO_TERM_SLOW, COMBO_IDL
 // COMBO(lock,   &kp LG(L),   LT0 RT0,     SYS,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
 // COMBO(sleep,  &sleep,      LT1 RT1,     SYS,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
 // COMBO(soft,   &soft_off,   LT2 RT2,     SYS,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
-// COMBO(stdio, &studio_unlock, LM0 RM0,     SYS,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+COMBO(stdio, &studio_unlock, LM0 RM0,     SYS,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
 
 // calc +-*/.,RET
 COMBO(plus,   &kp PLUS,    LM2 LM1,     NUM,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
