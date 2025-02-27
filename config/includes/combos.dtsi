@@ -61,8 +61,8 @@ COMBO(conn,   &ind_con,    LT1 RT1,     SYS,          COMBO_TERM_SLOW, COMBO_IDL
 // calc +-*/.,RET
 COMBO(plus,   &kp PLUS,    LT2 LT1,     NUM,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
 COMBO(minus,  &kp MINUS,   LM2 LM1,     NUM,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
-COMBO(star,   &kp STAR,    LT3 LM2,     NUM,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
-COMBO(slash,  &kp SLASH,   LM3 LT2,     NUM,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+COMBO(star,   &kp STAR,    LT2 LM1,     NUM,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+COMBO(slash,  &kp SLASH,   LM2 LT1,     NUM,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
 COMBO(comma,  &kp COMMA,   LB2 LB1,     NUM,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
 COMBO(dot,    &kp DOT,     LB3 LB2,     NUM,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
 COMBO(ret_n,  &kp RET,     LM3 LM2 LM1, NUM,          COMBO_TERM_FAST, COMBO_IDLE_SLOW)

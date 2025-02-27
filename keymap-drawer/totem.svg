@@ -790,14 +790,14 @@ rect.held, rect.combo.held {
 <text x="242" y="98" class="combo tap">-</text>
 </g>
 <g class="combo combopos-5">
-<path d="M243,73 v-5 a6.0,6.0 0 0 0 -6.0,-6.0 h-73" class="combo"/>
-<path d="M243,73 v5 a6.0,6.0 0 0 1 -6.0,6.0 h-13" class="combo"/>
-<rect rx="6" ry="6" x="229" y="60" width="28" height="26" class="combo"/>
-<text x="243" y="73" class="combo tap">*</text>
+<path d="M302,70 v-36 a6.0,6.0 0 0 0 -6.0,-6.0 h-64" class="combo"/>
+<path d="M302,70 v36 a6.0,6.0 0 0 1 -6.0,6.0 h-5" class="combo"/>
+<rect rx="6" ry="6" x="288" y="57" width="28" height="26" class="combo"/>
+<text x="302" y="70" class="combo tap">*</text>
 </g>
 <g class="combo combopos-6">
-<rect rx="6" ry="6" x="166" y="60" width="28" height="26" class="combo"/>
-<text x="180" y="73" class="combo tap">/</text>
+<rect rx="6" ry="6" x="228" y="57" width="28" height="26" class="combo"/>
+<text x="242" y="70" class="combo tap">/</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="228" y="141" width="28" height="26" class="combo"/>
