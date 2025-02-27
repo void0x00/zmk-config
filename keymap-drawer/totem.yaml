@@ -157,7 +157,7 @@ layers:
   - Bspc
   - Del
   SYS:
-  - '&rst_boot'
+  - Reset Bootloader
   - ''
   - BAT Save
   - Lock
@@ -166,7 +166,7 @@ layers:
   - Mid-dot
   - ''
   - ''
-  - '&rst_boot'
+  - Reset Bootloader
   - OUT USB
   - OUT BLE
   - ''
