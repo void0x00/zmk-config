@@ -164,6 +164,55 @@ parse_config:
       tap: $$mdi:mouse-scroll-wheel$$
       shifted: $$mdi:arrow-right-thin$$
       type: text_with_symbol
+
+   '&aml LGUI A':
+      tap: A
+      shifted: LGUI
+      type: text_with_symbol
+   '&amr LGUI SQT':
+      tap: '
+      shifted: LGUI
+      type: text_with_symbol
+    '&aml LALT S':
+      tap: S
+      shifted: LALT
+      type: text_with_symbol
+     '&amr LALT L':
+      tap: L
+      shifted: LALT
+      type: text_with_symbol
+    '&aml LCTRL F':
+      tap: F
+      shifted: CTRL
+      type: text_with_symbol
+    '&amr LCTRL J':
+      tap: J
+      shifted: CTRL
+      type: text_with_symbol
+    '&aml LSHFT D':
+      tap: D
+      shifted: SHIFT
+      type: text_with_symbol
+    '&amr LSHFT K':
+      tap: K
+      shifted: SHIFT
+      type: text_with_symbol
+    '&num_layer_ht 0 BSPC':
+      tap: $$mdi:backspace-outline$$
+      shifted: NUM
+      type: text_with_symbol
+    '&nav_layer_ht 0 SPC':
+      tap: $$mdi:keyboard-space$$
+      shifted: NAV
+      type: text_with_symbol
+    '&mt_home 0   LEFT':
+      tap: $$mdi:arrow-left$$
+      shifted: HOME
+      type: text_with_symbol
+    '&mt_end 0    RIGHT':
+      tap: $$mdi:arrow-right$$
+      shifted: END
+      type: text_with_symbol
       
     '&kp LC(TAB)': Tab Right
     '&kp LC(LS(TAB))': Tab Left
@@ -192,13 +241,13 @@ parse_config:
 
     
   zmk_combos:
-    combo_star:   {align: right}
+    combo_star:   {align: top}
     combo_ret:    {o: -0.25}
-    combo_sleep:  {align: top, o: 0.25}
-    combo_soft:   {align: top, o: 0.40}
+    combo_sleep:  {align: top}
+    combo_soft:   {align: top}
     combo_lock:   {align: top}
     combo_batt:   {align: top}
-    combo_conn:   {align: top}
+    combo_conn:   {align: top, o: 0.40}
 
       
   zmk_keycode_map:
