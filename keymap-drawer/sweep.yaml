@@ -126,11 +126,11 @@ layers:
   - {t: ↓, h: Ctl+End}
   - {t: →, h: End}
   - PgDn
-  - Ctl+Z
+  - Undo
   - Cut
-  - Ctl+C
-  - Ctl+V
-  - Ctl+Y
+  - Copy
+  - Paste
+  - Redo
   - APP
   - {t: End, h: Home}
   - ''

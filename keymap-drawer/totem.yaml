@@ -139,11 +139,11 @@ layers:
   - {t: →, h: End}
   - PgDn
   - Esc
-  - Ctl+Z
+  - Undo
   - Cut
-  - Ctl+C
-  - Ctl+V
-  - Ctl+Y
+  - Copy
+  - Paste
+  - Redo
   - APP
   - {t: End, h: Home}
   - ''

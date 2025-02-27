@@ -17,8 +17,15 @@ parse_config:
     "&bt BT_SEL 3": BT 4
 
     "&kp LC(INS)": Copy
+    "&kp LC(C)": Copy
     "&kp LC(X)": Cut
     "&kp LS(INS)": Paste
+    "&kp LC(V)": Paste
+    "&kp LC(Z)": Undo
+    "&kp LC(Y)": Redo
+
+
+    
 
     "&kp LG(LC(LEFT))": Prev Desk
     "&kp LG(LC(RIGHT))": Next Desk
