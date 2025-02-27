@@ -51,6 +51,9 @@
 <svg id="mdi:keyboard-return">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-return" viewBox="0 0 24 24"><path d="M19,7V11H5.83L9.41,7.41L8,6L2,12L8,18L9.41,16.58L5.83,13H21V7H19Z" /></svg>
 </svg>
+<svg id="mdi:keyboard-space">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-space" viewBox="0 0 24 24"><path d="M3 15H5V19H19V15H21V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V15Z" /></svg>
+</svg>
 <svg id="mdi:keyboard-tab">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-tab" viewBox="0 0 24 24"><path d="M20,18H22V6H20M11.59,7.41L15.17,11H1V13H15.17L11.59,16.58L13,18L19,12L13,6L11.59,7.41Z" /></svg>
 </svg>
@@ -465,13 +468,13 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">ESC</text>
 </g>
-<g transform="translate(320, 245) rotate(15.0)" class="key keypos-33">
-<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 64%">&amp;nav_layer…</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">0</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">SPC</tspan>
-</text>
-</g>
+<g transform="translate(320, 245) rotate(15.0)" class="key text_with_symbol keypos-33">
+<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key text_with_symbol side"/>
+<rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key text_with_symbol"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:keyboard-space"/>
+<a href="#NAV">
+<text x="0" y="-24" class="key text_with_symbol shifted layer-activator">NAV</text>
+</a></g>
 <g transform="translate(381, 270) rotate(30.0)" class="key keypos-34">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
@@ -486,13 +489,13 @@ rect.held, rect.combo.held {
 <a href="#SYM">
 <text x="0" y="24" class="key hold layer-activator">SYM</text>
 </a></g>
-<g transform="translate(531, 245) rotate(-15.0)" class="key keypos-36">
-<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 64%">&amp;num_layer…</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">0</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">BSPC</tspan>
-</text>
-</g>
+<g transform="translate(531, 245) rotate(-15.0)" class="key text_with_symbol keypos-36">
+<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key text_with_symbol side"/>
+<rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key text_with_symbol"/>
+<use href="#mdi:backspace-outline" xlink:href="#mdi:backspace-outline" x="-7" y="-11" height="14" width="14.0" class="key text_with_symbol tap glyph mdi:backspace-outline"/>
+<a href="#NUM">
+<text x="0" y="-24" class="key text_with_symbol shifted layer-activator">NUM</text>
+</a></g>
 <g transform="translate(596, 236)" class="key keypos-37">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>

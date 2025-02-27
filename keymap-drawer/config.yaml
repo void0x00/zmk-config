@@ -165,8 +165,19 @@ parse_config:
       shifted: $$mdi:arrow-right-thin$$
       type: text_with_symbol
 
-
-    '&mt_end 0    RIGHT':
+    '&num_layer_ht 0 BSPC':
+      tap: $$mdi:backspace-outline$$
+      shifted: NUM
+      type: text_with_symbol
+    '&nav_layer_ht 0 SPC':
+      tap: $$mdi:keyboard-space$$
+      shifted: NAV
+      type: text_with_symbol
+    'NAV_LEFT':
+      tap: $$mdi:arrow-left$$
+      shifted: HOME
+      type: text_with_symbol
+    'NAV_RIGHT':
       tap: $$mdi:arrow-right$$
       shifted: END
       type: text_with_symbol

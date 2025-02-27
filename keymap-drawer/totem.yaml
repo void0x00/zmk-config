@@ -34,10 +34,10 @@ layers:
   - /
   - $$mdi:keyboard-return$$
   - ESC
-  - '&nav_layer_ht 0 SPC'
+  - {t: '$$mdi:keyboard-space$$', s: NAV, type: text_with_symbol}
   - {t: '$$mdi:keyboard-tab$$', h: SYS}
   - {t: '$$mdi:keyboard-return$$', h: SYM}
-  - '&num_layer_ht 0 BSPC'
+  - {t: '$$mdi:backspace-outline$$', s: NUM, type: text_with_symbol}
   - $$mdi:backspace-reverse-outline$$
   NUM:
   - '['
