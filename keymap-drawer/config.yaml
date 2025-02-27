@@ -165,7 +165,7 @@ parse_config:
       shifted: $$mdi:arrow-right-thin$$
       type: text_with_symbol
 
-   '&aml LGUI A':
+   '&aml M_PNK A':
       tap: A
       shifted: LGUI
       type: text_with_symbol
