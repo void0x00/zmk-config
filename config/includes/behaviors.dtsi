@@ -26,18 +26,25 @@
     continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
 };
 
-/* Magic-shift & auto-layers */
+/* auto-layers */
 
-// Tap: repeat after alpha, else sticky-shift |
-// Shift + tap/ double-tap: caps-word | Hold: shift.
-#define MAGIC_SHIFT &magic_shift 0 BSPC
-ZMK_HOLD_TAP(magic_shift, bindings = <&magic_shift_tap>, <&kp>;
+// Tap: backspace | hold: layer | shift + hold: layer
+#define NUM_TAP &num_layer_ht 0 BSPC
+ZMK_HOLD_TAP(num_layer_ht, bindings = <&morph_num>, <&kp>;
              flavor = "balanced"; tapping-term-ms = <200>;
              quick-tap-ms = <QUICK_TAP_MS>;)
-ZMK_MOD_MORPH(magic_shift_tap, bindings = <&mo NUM>, <&to NUM>;
+ZMK_MOD_MORPH(morph_num, bindings = <&mo NUM>, <&to NUM>;
               mods = <(MOD_LSFT)>;)
 
-// Tap: num-word -> &kp BSPC | double-tap: sticky num-layer -> num-word | Hold: num-layer.
+// Tap: backspace | hold: layer | shift + hold: layer
+#define NAV_TAP &nav_layer_ht 0 SPC
+ZMK_HOLD_TAP(nav_layer_ht, bindings = <&morph_nav>, <&kp>;
+             flavor = "balanced"; tapping-term-ms = <200>;
+             quick-tap-ms = <QUICK_TAP_MS>;)
+ZMK_MOD_MORPH(morph_nav, bindings = <&mo NAV>, <&to NAV>;
+              mods = <(MOD_LSFT)>;)
+
+// &kp BSPC | double-tap: num-word | Hold: num-layer.
 #define SMART_NUM &smart_num NUM 0
 ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
@@ -137,13 +144,6 @@ MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
             tapping-term-ms = <500>;
             flavor = "tap-preferred";
             bindings = <&bootloader>, <&sys_reset>;
-        };
-        con_bat: con_bat {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <500>;
-            flavor = "tap-preferred";
-            bindings = <&ind_con>, <&ind_bat>;
         };
     };
 };
