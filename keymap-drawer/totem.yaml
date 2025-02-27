@@ -171,7 +171,7 @@ layers:
   - OUT BLE
   - ''
   - ''
-  - Studio Unlock
+  - ''
   - ''
   - ㅎkg
   - ㅎg
@@ -260,6 +260,9 @@ combos:
   l: [SYS]
   a: top
   o: 0.4
+- p: [14, 15]
+  k: Studio Unlock
+  l: [SYS]
 - p: [12, 13]
   k: +
   l: [NUM]
