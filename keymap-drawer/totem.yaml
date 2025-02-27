@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: totem}
+layout: {zmk_keyboard: totem}
 layers:
   DEF:
   - Q
@@ -34,10 +34,10 @@ layers:
   - /
   - $$mdi:keyboard-return$$
   - ESC
-  - {t: '$$mdi:keyboard-space$$', h: NAV}
+  - '&nav_layer_ht 0 SPC'
   - {t: '$$mdi:keyboard-tab$$', h: SYS}
   - {t: '$$mdi:keyboard-return$$', h: SYM}
-  - '&smart_num 1 BSPC'
+  - '&num_layer_ht 0 BSPC'
   - $$mdi:backspace-reverse-outline$$
   NUM:
   - '['
@@ -124,9 +124,9 @@ layers:
   - Tab Right
   - '&ht LA(F4) LC(F4)'
   - INS
-  - HOME
-  - $$mdi:arrow-up$$
-  - END
+  - {t: '$$mdi:backspace-outline$$', h: 'Ctl+$$mdi:backspace-outline$$'}
+  - {t: '$$mdi:arrow-up$$', h: Ctl+HOME}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
   - Page Up
   - Gui
   - Alt
@@ -134,9 +134,9 @@ layers:
   - Ctrl
   - {t: NUM, h: '$$mdi:toggle-switch$$'}
   - Caps Lock
-  - $$mdi:arrow-left$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-right$$
+  - '&mt_home 0 LEFT'
+  - {t: '$$mdi:arrow-down$$', h: Ctl+END}
+  - '&mt_end 0 RIGHT'
   - Page Down
   - ESC
   - $$mdi:undo$$
@@ -144,25 +144,25 @@ layers:
   - $$mdi:content-copy$$
   - $$mdi:content-paste$$
   - $$mdi:redo$$
-  - Sel-All
-  - Sel-Line
-  - Sel-Word
+  - APP
+  - '&ht HOME END'
+  - ''
   - ''
   - ''
   - $$mdi:keyboard-return$$
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:keyboard-return$$
   - $$mdi:backspace-outline$$
   - $$mdi:backspace-reverse-outline$$
   SYS:
   - '&rst_boot'
-  - '&con_bat'
+  - ''
   - BAT Save
   - Lock
   - Sleep
-  - APP
+  - ''
   - Mid-dot
   - ''
   - ''
@@ -205,8 +205,11 @@ combos:
 - p: [0, 1]
   k: ESC
   l: [DEF]
-- p: [8, 9]
+- p: [7, 8]
   k: $$mdi:backspace-reverse-outline$$
+  l: [DEF]
+- p: [6, 7]
+  k: $$mdi:backspace-outline$$
   l: [DEF]
 - p: [12, 13]
   k: (
@@ -220,6 +223,13 @@ combos:
 - p: [17, 18]
   k: ']'
   l: [DEF]
+- p: [11, 13]
+  k: $$mdi:keyboard-tab$$
+  l: [DEF, NAV]
+- p: [18, 16]
+  k: $$mdi:keyboard-return$$
+  l: [DEF, NAV]
+  o: -0.25
 - p: [27, 28]
   k: ;
   l: [DEF]
@@ -238,17 +248,25 @@ combos:
 - p: [14, 15]
   k: {t: DEF, h: '$$mdi:toggle-switch$$'}
   l: [NUM, NAV]
+- p: [4, 5]
+  k: Batt level
+  l: [SYS]
+  a: top
+- p: [3, 6]
+  k: Conn status
+  l: [SYS]
+  a: top
 - p: [2, 3]
   k: +
   l: [NUM]
 - p: [12, 13]
   k: '-'
   l: [NUM]
-- p: [2, 13]
+- p: [1, 12]
   k: '*'
   l: [NUM]
   a: right
-- p: [12, 3]
+- p: [11, 2]
   k: /
   l: [NUM]
 - p: [23, 24]
@@ -260,4 +278,3 @@ combos:
 - p: [11, 12, 13]
   k: $$mdi:keyboard-return$$
   l: [NUM]
-  o: -0.25
