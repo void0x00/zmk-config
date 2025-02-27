@@ -73,9 +73,9 @@ parse_config:
 
   zmk_combos:
     combo_star:   {align: top}
-    combo_ret:    {align: down}
-    combo_ret_n:    {align: down}
-    combo_tab:    {align: down}
+    combo_ret:    {align: top}
+    combo_ret_n:    {align: top}
+    combo_tab:    {align: top}
     combo_batt:   {align: top}
     combo_conn:   {align: top, o: 0.40}
 
@@ -184,4 +184,4 @@ parse_config:
 draw_config:
   append_colon_to_layer_header: false
   dark_mode: auto
-  footer_text: "urob/zmk-config"
+  footer_text: "void0x00/zmk-config"
