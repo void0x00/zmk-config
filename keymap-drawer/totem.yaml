@@ -226,11 +226,11 @@ combos:
 - p: [11, 13]
   k: Tab
   l: [DEF, NAV]
-  a: top
+  a: bottom
 - p: [18, 16]
   k: Enter
   l: [DEF, NAV]
-  a: top
+  a: bottom
 - p: [27, 28]
   k: ;
   l: [DEF]
@@ -280,4 +280,4 @@ combos:
 - p: [11, 12, 13]
   k: Enter
   l: [NUM]
-  a: top
+  a: bottom

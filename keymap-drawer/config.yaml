@@ -73,9 +73,9 @@ parse_config:
 
   zmk_combos:
     combo_star:   {align: top}
-    combo_ret:    {align: top}
-    combo_ret_n:    {align: top}
-    combo_tab:    {align: top}
+    combo_ret:    {align: bottom}
+    combo_ret_n:    {align: bottom}
+    combo_tab:    {align: bottom}
     combo_batt:   {align: top}
     combo_conn:   {align: top, o: 0.40}
 
