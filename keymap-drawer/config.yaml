@@ -83,7 +83,6 @@ parse_config:
     combo_tab:    {align: bottom, o: -0.20}
     combo_batt:   {align: top}
     combo_conn:   {align: top, o: 0.40}
-    combo_studio:   {align: top, o: 0.90}
 
   zmk_keycode_map:
     # custom mappings
