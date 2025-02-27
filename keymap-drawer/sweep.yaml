@@ -106,11 +106,11 @@ layers:
   - {type: held}
   - {type: trans}
   NAV:
-  - Alt+Sft+Tab
-  - Alt+Tab
-  - Ctl+Sft+Tab
-  - Ctl+Tab
-  - {t: Ctl+F4, h: Alt+F4}
+  - TaskSW ←
+  - TaskSW →
+  - Tab Left
+  - Tab Right
+  - {t: Tab Close, h: Win Close}
   - Ins
   - {t: Bspc, h: Ctl+Bspc}
   - {t: ↑, h: Ctl+Home}
@@ -143,11 +143,11 @@ layers:
   SYS:
   - '&rst_boot'
   - ''
-  - '&soft_off'
-  - Gui+L
-  - '&sleep'
+  - BAT Save
+  - Lock
+  - Sleep
   - ''
-  - '&uni_mdot'
+  - Mid-dot
   - ''
   - ''
   - '&rst_boot'
@@ -155,22 +155,22 @@ layers:
   - OUT BLE
   - ''
   - ''
-  - '&studio_unlock'
+  - Studio Unlock
   - ''
-  - '&hwp_kg'
-  - '&hwp_grm'
-  - '&hwp_mg'
-  - '&hwp_vac'
+  - ㅎkg
+  - ㅎg
+  - ㅎmg
+  - ㅎVAC
   - BT CLR ALL
   - BT 1
   - BT 2
   - BT 3
   - BT CLR
-  - '&hwp_pm'
-  - '&hwp_tmp'
-  - '&hwp_won'
-  - '&hwp_phi'
-  - '&hwp_mm'
+  - ㅎ±
+  - ㅎ℃
+  - ㅎ₩
+  - ㅎØ
+  - ㅎmm
   - {type: trans}
   - {type: held}
   - {type: trans}
@@ -206,9 +206,11 @@ combos:
 - p: [11, 13]
   k: Tab
   l: [DEF, NAV]
+  o: -0.25
 - p: [18, 16]
   k: Enter
   l: [DEF, NAV]
+  o: -0.25
 - p: [26, 27]
   k: ;
   l: [DEF]
@@ -228,11 +230,14 @@ combos:
   k: {t: DEF, h: toggle}
   l: [NUM, NAV]
 - p: [4, 5]
-  k: '&ind_bat'
+  k: Batt level
   l: [SYS]
+  a: top
 - p: [3, 6]
-  k: '&ind_con'
+  k: Conn status
   l: [SYS]
+  a: top
+  o: 0.4
 - p: [12, 13]
   k: +
   l: [NUM]
@@ -242,6 +247,7 @@ combos:
 - p: [2, 13]
   k: '*'
   l: [NUM]
+  a: top
 - p: [12, 3]
   k: /
   l: [NUM]

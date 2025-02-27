@@ -55,17 +55,40 @@ parse_config:
     "&mkp MCLK": Middle Click
     "&mkp MB4": Back Click
     "&mkp MB5": Forward Click
+    '&kp LC(TAB)': Tab Right
+    '&kp LC(LS(TAB))': Tab Left
+    '&kp LA(TAB)': TaskSW →
+    '&kp LA(LS(TAB))': TaskSW ←
+    '&kp LA(F4)': Win Close
+    '&kp LC(F4)': Tab Close
+    '&kp LG(L)': Lock
+    '&sleep': Sleep
+    '&soft_off': BAT Save
+    '&hwp_won': ㅎ₩
+    '&hwp_tmp': ㅎ℃
+    '&hwp_pm': ㅎ±
+    '&hwp_phi': ㅎØ
+    '&hwp_kg': ㅎkg
+    '&hwp_grm': ㅎg
+    '&hwp_mg': ㅎmg
+    '&hwp_vac': ㅎVAC
+    '&hwp_mm': ㅎmm
+    '&uni_mdot': Mid-dot
+    '&sel_ln': Sel-Line
+    '&sel_wrd': Sel-Word
+    '&studio_unlock' : Studio Unlock
+    '&ind_con': Conn status
+    '&ind_bat': Batt level
 
   trans_legend: { "t": "", "type": "trans" }
 
   zmk_combos:
-    combo_cut: { align: bottom, o: 0.15 }
-    combo_ldrsh: { align: top, o: 1.35 }
-
-    combo_lt: { hidden: true }
-    combo_gt: { hidden: true }
-    combo_lbrc: { hidden: true }
-    combo_rbrc: { hidden: true }
+    combo_star:   {align: top}
+    combo_ret:    {o: -0.25}
+    combo_ret_N:    {o: -0.25}
+    combo_tab:    {o: -0.25}
+    combo_batt:   {align: top}
+    combo_conn:   {align: top, o: 0.40}
 
   zmk_keycode_map:
     # custom mappings
