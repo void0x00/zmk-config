@@ -365,16 +365,16 @@ path.combo { stroke: #7f7f7f; }
 <text x="671" y="101" class="combo tap">]</text>
 </g>
 <g class="combo combopos-9">
-<path d="M210,40 h-56 a6.0,6.0 0 0 0 -6.0,6.0 v53" class="combo"/>
-<path d="M210,40 h56 a6.0,6.0 0 0 1 6.0,6.0 v47" class="combo"/>
-<rect rx="6" ry="6" x="196" y="27" width="28" height="26" class="combo"/>
-<text x="210" y="40" class="combo tap">Tab</text>
+<path d="M210,96 h-56 a6.0,6.0 0 0 0 -6.0,6.0 v-3" class="combo"/>
+<path d="M210,96 h56 a6.0,6.0 0 0 1 6.0,6.0 v-9" class="combo"/>
+<rect rx="6" ry="6" x="196" y="83" width="28" height="26" class="combo"/>
+<text x="210" y="96" class="combo tap">Tab</text>
 </g>
 <g class="combo combopos-10">
-<path d="M641,40 h55 a6.0,6.0 0 0 1 6.0,6.0 v53" class="combo"/>
-<path d="M641,40 h-55 a6.0,6.0 0 0 0 -6.0,6.0 v47" class="combo"/>
-<rect rx="6" ry="6" x="627" y="27" width="28" height="26" class="combo"/>
-<text x="641" y="40" class="combo tap">Enter</text>
+<path d="M641,96 h55 a6.0,6.0 0 0 1 6.0,6.0 v-3" class="combo"/>
+<path d="M641,96 h-55 a6.0,6.0 0 0 0 -6.0,6.0 v-9" class="combo"/>
+<rect rx="6" ry="6" x="627" y="83" width="28" height="26" class="combo"/>
+<text x="641" y="96" class="combo tap">Enter</text>
 </g>
 <g class="combo combopos-11">
 <rect rx="6" ry="6" x="595" y="141" width="28" height="26" class="combo"/>
@@ -609,11 +609,11 @@ path.combo { stroke: #7f7f7f; }
 <text x="182" y="157" class="combo tap">.</text>
 </g>
 <g class="combo combopos-9">
-<path d="M210,40 h-56 a6.0,6.0 0 0 0 -6.0,6.0 v53" class="combo"/>
-<path d="M210,40 l1,25" class="combo"/>
-<path d="M210,40 h55 a6.0,6.0 0 0 1 6.0,6.0 v47" class="combo"/>
-<rect rx="6" ry="6" x="196" y="27" width="28" height="26" class="combo"/>
-<text x="210" y="40" class="combo tap">Enter</text>
+<path d="M210,96 h-56 a6.0,6.0 0 0 0 -6.0,6.0 v-3" class="combo"/>
+<path d="M210,96 l0,-1" class="combo"/>
+<path d="M210,96 h55 a6.0,6.0 0 0 1 6.0,6.0 v-9" class="combo"/>
+<rect rx="6" ry="6" x="196" y="83" width="28" height="26" class="combo"/>
+<text x="210" y="96" class="combo tap">Enter</text>
 </g>
 </g>
 </g>
@@ -947,16 +947,16 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key tap">Del</text>
 </g>
 <g class="combo combopos-0">
-<path d="M210,40 h-56 a6.0,6.0 0 0 0 -6.0,6.0 v53" class="combo"/>
-<path d="M210,40 h56 a6.0,6.0 0 0 1 6.0,6.0 v47" class="combo"/>
-<rect rx="6" ry="6" x="196" y="27" width="28" height="26" class="combo"/>
-<text x="210" y="40" class="combo tap">Tab</text>
+<path d="M210,96 h-56 a6.0,6.0 0 0 0 -6.0,6.0 v-3" class="combo"/>
+<path d="M210,96 h56 a6.0,6.0 0 0 1 6.0,6.0 v-9" class="combo"/>
+<rect rx="6" ry="6" x="196" y="83" width="28" height="26" class="combo"/>
+<text x="210" y="96" class="combo tap">Tab</text>
 </g>
 <g class="combo combopos-1">
-<path d="M641,40 h55 a6.0,6.0 0 0 1 6.0,6.0 v53" class="combo"/>
-<path d="M641,40 h-55 a6.0,6.0 0 0 0 -6.0,6.0 v47" class="combo"/>
-<rect rx="6" ry="6" x="627" y="27" width="28" height="26" class="combo"/>
-<text x="641" y="40" class="combo tap">Enter</text>
+<path d="M641,96 h55 a6.0,6.0 0 0 1 6.0,6.0 v-3" class="combo"/>
+<path d="M641,96 h-55 a6.0,6.0 0 0 0 -6.0,6.0 v-9" class="combo"/>
+<rect rx="6" ry="6" x="627" y="83" width="28" height="26" class="combo"/>
+<text x="641" y="96" class="combo tap">Enter</text>
 </g>
 <g class="combo combopos-2">
 <path d="M425,121 l-75,0" class="combo"/>
