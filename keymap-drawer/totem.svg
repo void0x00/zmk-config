@@ -609,10 +609,11 @@ path.combo { stroke: #7f7f7f; }
 <text x="182" y="157" class="combo tap">.</text>
 </g>
 <g class="combo combopos-9">
-<path d="M210,104 l-43,9" class="combo"/>
-<path d="M210,104 l41,5" class="combo"/>
-<rect rx="6" ry="6" x="196" y="91" width="28" height="26" class="combo"/>
-<text x="210" y="104" class="combo tap">Enter</text>
+<path d="M210,96 h-56 a6.0,6.0 0 0 0 -6.0,6.0 v-3" class="combo"/>
+<path d="M210,96 l0,-1" class="combo"/>
+<path d="M210,96 h55 a6.0,6.0 0 0 1 6.0,6.0 v-9" class="combo"/>
+<rect rx="6" ry="6" x="196" y="83" width="28" height="26" class="combo"/>
+<text x="210" y="96" class="combo tap">Enter</text>
 </g>
 </g>
 </g>

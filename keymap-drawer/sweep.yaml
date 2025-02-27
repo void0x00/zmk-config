@@ -260,4 +260,5 @@ combos:
 - p: [11, 12, 13]
   k: Enter
   l: [NUM]
-  o: 0.9
+  a: bottom
+  o: -0.9
