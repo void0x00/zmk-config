@@ -25,20 +25,9 @@ parse_config:
     "&kp LG(LC(LS(A)))": Pin App
     "&kp LG(LC(LS(Q)))": Pin Win
 
-    "&swapper": Next Win
     "&kp LS(TAB)": Prev Win
-    "&dot_spc": Sentence
-    "&num_dance": { "t": "Numword", "s": "Sticky Num" }
-    "&magic_shift": { "t": Magic, "h": "Shift" }
-    "&smart_mouse": Smart Mouse
 
     "&hml LS(LALT)TAB": Tab
-    "&hm_combo_ldr": Leader
-    "&hm_combo_ldrsh": Shift+Leader
-    "&hm_combo_lpar": { "t": "(", "right": "<" }
-    "&hm_combo_rpar": { "t": ")", "right": ">" }
-    "&kp LBKT": { "t": "[", "right": "{" }
-    "&kp RBKT": { "t": "]", "right": "}" }
 
     "&mmv MOVE_UP": Mouse ↑
     "&mmv MOVE_DOWN": Mouse ↓
@@ -84,9 +73,9 @@ parse_config:
 
   zmk_combos:
     combo_star:   {align: top}
-    combo_ret:    {o: -0.25}
-    combo_ret_N:    {o: -0.25}
-    combo_tab:    {o: -0.25}
+    combo_ret:    {o: -0.40}
+    combo_ret_N:    {o: -0.40}
+    combo_tab:    {o: -0.40}
     combo_batt:   {align: top}
     combo_conn:   {align: top, o: 0.40}
 

@@ -40,11 +40,11 @@ layers:
   - {t: Bspc, h: NUM}
   - Del
   NUM:
-  - {t: '[', right: '{'}
+  - '['
   - '7'
   - '8'
   - '9'
-  - {t: ']', right: '}'}
+  - ']'
   - AL CALC
   - Left Click
   - Mouse ↑
@@ -218,19 +218,19 @@ combos:
   k: )
   l: [DEF]
 - p: [11, 12]
-  k: {t: '[', right: '{'}
+  k: '['
   l: [DEF]
 - p: [17, 18]
-  k: {t: ']', right: '}'}
+  k: ']'
   l: [DEF]
 - p: [11, 13]
   k: Tab
   l: [DEF, NAV]
-  o: -0.25
+  o: -0.4
 - p: [18, 16]
   k: Enter
   l: [DEF, NAV]
-  o: -0.25
+  o: -0.4
 - p: [27, 28]
   k: ;
   l: [DEF]
