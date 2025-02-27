@@ -207,12 +207,12 @@ combos:
   k: Tab
   l: [DEF, NAV]
   a: bottom
-  o: -0.2
+  o: -0.3
 - p: [18, 16]
   k: Enter
   l: [DEF, NAV]
   a: bottom
-  o: -0.2
+  o: -0.3
 - p: [26, 27]
   k: ;
   l: [DEF]
@@ -263,4 +263,4 @@ combos:
   k: Enter
   l: [NUM]
   a: bottom
-  o: -0.2
+  o: -0.3
