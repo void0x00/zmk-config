@@ -206,11 +206,11 @@ combos:
 - p: [11, 13]
   k: Tab
   l: [DEF, NAV]
-  o: -0.4
+  o: 0.9
 - p: [18, 16]
   k: Enter
   l: [DEF, NAV]
-  o: -0.4
+  o: 0.9
 - p: [26, 27]
   k: ;
   l: [DEF]
@@ -260,4 +260,4 @@ combos:
 - p: [11, 12, 13]
   k: Enter
   l: [NUM]
-  o: -0.4
+  o: 0.9
