@@ -141,16 +141,16 @@ layers:
   - Enter
   - Bspc
   SYS:
-  - Reset Bootloader
-  - ''
+  - Boot
+  - Reset
   - BAT Save
   - Lock
   - Sleep
   - ''
   - Mid-dot
   - ''
-  - ''
-  - Reset Bootloader
+  - Reset
+  - Boot
   - OUT USB
   - OUT BLE
   - ''
