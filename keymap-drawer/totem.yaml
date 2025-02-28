@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: totem}
+layout: {zmk_keyboard: totem}
 layers:
   DEF:
   - Q
@@ -21,7 +21,7 @@ layers:
   - {t: K, h: Shift}
   - {t: L, h: Alt}
   - {t: '''', h: Gui}
-  - ESC
+  - Esc
   - Z
   - X
   - C
@@ -29,38 +29,38 @@ layers:
   - B
   - N
   - M
-  - {t: ',', h: 'Sft+$$mdi:keyboard-space$$'}
-  - {t: ., h: RAlt}
+  - {t: ',', h: Sft+Spc}
+  - {t: ., h: Alt}
   - /
-  - $$mdi:keyboard-return$$
-  - ESC
-  - {t: '$$mdi:keyboard-space$$', h: NAV}
-  - {t: '$$mdi:keyboard-tab$$', h: SYS}
-  - {t: '$$mdi:keyboard-return$$', h: SYM}
-  - {t: '$$mdi:backspace-outline$$', h: NUM}
-  - $$mdi:backspace-reverse-outline$$
+  - Enter
+  - Esc
+  - {t: SPC, h: NAV}
+  - {t: Tab, h: SYS}
+  - {t: Enter, h: SYM}
+  - {t: Bspc, h: NUM}
+  - Del
   NUM:
   - '['
   - '7'
   - '8'
   - '9'
   - ']'
-  - $$mdi:calculator$$
-  - $$mdi:cursor-default-click-outline$$
-  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-up$$', type: text_with_symbol}
-  - $$mdi:cursor-default-click$$
-  - {t: '$$mdi:mouse-scroll-wheel$$', s: '$$mdi:arrow-up-thin$$', type: text_with_symbol}
+  - AL CALC
+  - Left Click
+  - Mouse ↑
+  - Right Click
+  - Scroll ↑
   - ;
   - '4'
   - '5'
   - '6'
   - '='
-  - {t: NAV, h: '$$mdi:toggle-switch$$'}
-  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-left$$', type: text_with_symbol}
-  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-down$$', type: text_with_symbol}
-  - {t: '$$mdi:mouse-outline$$', s: '$$mdi:arrow-right$$', type: text_with_symbol}
-  - {t: '$$mdi:mouse-scroll-wheel$$', s: '$$mdi:arrow-down-thin$$', type: text_with_symbol}
-  - ESC
+  - {t: NAV, h: toggle}
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - Scroll ↓
+  - Esc
   - '`'
   - '1'
   - '2'
@@ -69,22 +69,22 @@ layers:
   - STOP
   - $$mdi:skip-backward$$
   - $$mdi:skip-forward$$
-  - $$mdi:volume-minus$$
-  - $$mdi:volume-plus$$
-  - $$mdi:keyboard-return$$
+  - $$mdi:volume-medium$$
+  - $$mdi:volume-high$$
+  - Enter
   - .
   - '0'
   - '-'
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: trans}
   - {type: held}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: trans}
   SYM:
   - '{'
   - '&'
   - '*'
   - (
   - '}'
-  - Print Scrn
+  - PSCRN
   - F7
   - F8
   - F9
@@ -94,107 +94,107 @@ layers:
   - {t: '%', h: Shift}
   - {t: ^, h: Ctrl}
   - +
-  - Scroll Lock
+  - SLCK
   - F4
   - F5
   - F6
   - F11
-  - ESC
+  - Esc
   - '~'
   - '!'
   - '@'
   - '#'
   - '|'
-  - Pause Break
+  - PAUSE BREAK
   - F1
   - F2
   - F3
   - F10
-  - $$mdi:keyboard-return$$
+  - Enter
   - (
   - )
   - _
   - {type: held}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: trans}
+  - {type: trans}
   NAV:
   - TaskSW ←
   - TaskSW →
   - Tab Left
   - Tab Right
   - {t: Tab Close, h: Win Close}
-  - INS
-  - HOME
-  - $$mdi:arrow-up$$
-  - END
-  - Page Up
+  - Ins
+  - {t: Bspc, h: Ctl+Bspc}
+  - {t: ↑, h: Ctl+Home}
+  - {t: Del, h: Ctl+Del}
+  - PgUp
   - Gui
   - Alt
   - Shift
   - Ctrl
-  - {t: NUM, h: '$$mdi:toggle-switch$$'}
-  - Caps Lock
-  - $$mdi:arrow-left$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-right$$
-  - Page Down
-  - ESC
-  - $$mdi:undo$$
-  - $$mdi:content-cut$$
-  - $$mdi:content-copy$$
-  - $$mdi:content-paste$$
-  - $$mdi:redo$$
-  - Sel-All
-  - Sel-Line
-  - Sel-Word
+  - {t: NUM, h: toggle}
+  - CAPS
+  - {t: ←, h: Home}
+  - {t: ↓, h: Ctl+End}
+  - {t: →, h: End}
+  - PgDn
+  - Esc
+  - Undo
+  - Cut
+  - Copy
+  - Paste
+  - Redo
+  - APP
+  - {t: End, h: Home}
   - ''
   - ''
-  - $$mdi:keyboard-return$$
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
+  - Enter
+  - {type: trans}
   - {type: held}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - $$mdi:keyboard-return$$
-  - $$mdi:backspace-outline$$
-  - $$mdi:backspace-reverse-outline$$
+  - {type: trans}
+  - Enter
+  - Bspc
+  - Del
   SYS:
-  - '&rst_boot'
-  - '&con_bat'
+  - Reset Bootloader
+  - ''
   - BAT Save
   - Lock
   - Sleep
-  - APP
+  - ''
   - Mid-dot
   - ''
   - ''
-  - '&rst_boot'
-  - $$mdi:usb$$
-  - $$mdi:bluetooth$$
+  - Reset Bootloader
+  - OUT USB
+  - OUT BLE
   - ''
   - ''
-  - Studio Unlock
+  - ''
   - ''
   - ㅎkg
   - ㅎg
   - ㅎmg
   - ㅎVAC
-  - ESC
+  - Esc
   - BT CLR ALL
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
+  - BT 1
+  - BT 2
+  - BT 3
   - BT CLR
   - ㅎ±
   - ㅎ℃
   - ㅎ₩
   - ㅎØ
   - ㅎmm
-  - $$mdi:keyboard-return$$
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - Enter
+  - {type: trans}
+  - {type: trans}
   - {type: held}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
 combos:
 - p: [1, 2]
   k: '@'
@@ -203,10 +203,13 @@ combos:
   k: '#'
   l: [DEF]
 - p: [0, 1]
-  k: ESC
+  k: Esc
   l: [DEF]
-- p: [8, 9]
-  k: $$mdi:backspace-reverse-outline$$
+- p: [7, 8]
+  k: Del
+  l: [DEF]
+- p: [6, 7]
+  k: Bspc
   l: [DEF]
 - p: [12, 13]
   k: (
@@ -220,6 +223,16 @@ combos:
 - p: [17, 18]
   k: ']'
   l: [DEF]
+- p: [11, 13]
+  k: Tab
+  l: [DEF, NAV]
+  a: bottom
+  o: -0.2
+- p: [18, 16]
+  k: Enter
+  l: [DEF, NAV]
+  a: bottom
+  o: -0.2
 - p: [27, 28]
   k: ;
   l: [DEF]
@@ -227,7 +240,7 @@ combos:
   k: ':'
   l: [DEF]
 - p: [30, 29]
-  k: $$mdi:volume-mute$$
+  k: $$mdi:volume-off$$
   l: [NUM]
 - p: [28, 27]
   k: $$mdi:play-pause$$
@@ -236,18 +249,30 @@ combos:
   k: Caps Word
   l: [DEF]
 - p: [14, 15]
-  k: {t: DEF, h: '$$mdi:toggle-switch$$'}
+  k: {t: DEF, h: toggle}
   l: [NUM, NAV]
-- p: [2, 3]
+- p: [4, 5]
+  k: Batt level
+  l: [SYS]
+  a: top
+- p: [3, 6]
+  k: Conn status
+  l: [SYS]
+  a: top
+  o: 0.4
+- p: [14, 15]
+  k: Studio Unlock
+  l: [SYS]
+- p: [12, 13]
   k: +
   l: [NUM]
-- p: [12, 13]
+- p: [2, 3]
   k: '-'
   l: [NUM]
 - p: [2, 13]
   k: '*'
   l: [NUM]
-  a: right
+  a: top
 - p: [12, 3]
   k: /
   l: [NUM]
@@ -258,6 +283,7 @@ combos:
   k: .
   l: [NUM]
 - p: [11, 12, 13]
-  k: $$mdi:keyboard-return$$
+  k: Enter
   l: [NUM]
-  o: -0.25
+  a: bottom
+  o: -0.2

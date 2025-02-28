@@ -10,7 +10,7 @@ Additional features are provided by the following [modules](https://zmk.dev/docs
 
 - [**zmk-dongle-display**](https://github.com/englmaxi/zmk-dongle-display) to show the peripheral battery percentage (and more!) on the display of my dongle. <br />
 - [**zmk-rgbled-widgets**](https://github.com/caksoylar/zmk-rgbled-widget) to show the connection and battery status with the built-in LEDs of the Xiao BLE controller. Based on this, the module was adapted in [led_indicator](boards/shields/led_indicator) to be used with the single LED of the nice!nano.
-- [**zmk-auto-layer**](https://github.com/urob/zmk-auto-layer) Use this to hold: &mo layer, tap: &kp, shift + hold: &to layer. This will relieve thumb locking.
+- [**zmk-auto-layer**](https://github.com/urob/zmk-auto-layer) This to be used relieve the hold of thumb. hold: &mo layer, tap: &kp, shift + hold: &to layer.
 
 ## Boards and Keymaps
 
