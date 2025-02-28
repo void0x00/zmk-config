@@ -6,6 +6,9 @@
 // #include <dt-bindings/zmk/ext_power.h>
 #include <behaviors/rgbled_widget.dtsi>
 
+#include <behaviors/num_word.dtsi> // Requires auto-layer module.
+#include "zmk-helpers/helper.h"
+
 // Layer aliases
 #define DEF 0
 #define NUM 1
@@ -31,9 +34,9 @@
             bindings = <LAYER_FROM38( \
 //           ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
               &kp Q,         &kp W,         &kp E,         &kp R,         &kp T,             &kp Y,         &kp U,         &kp I,         &kp O,         &kp P, \
-              &aml M_PNK A,  &aml M_RNG S,  &asl M_MDL D,  &aml M_IDX F,  &kp G,             &kp H,         &amr M_IDX J,  &asr M_MDL K,  &amr M_RNG L,  &aml M_PNK SQT, \
+              &aml M_PNK A,  &aml M_RNG S,  &asl M_MDL D,  &aml M_IDX F,  &kp G,             &kp H,         &amr M_IDX J,  &asr M_MDL K,  &amr M_RNG L,  &amr M_PNK SQT, \
 &kp L_EXP,    &kp Z,         &kp X,         &kp C,         &kp V,         &kp B,             &kp N,         &kp M,         &ht RS(SPACE) COMMA, &mt RALT DOT, &kp SLASH, &kp R_EXP, \
-                                            &kp ESC,       &lt NAV SPACE, &lt SYS TAB,       &lt SYM RET,   &lt NUM BSPC,  &kp DEL \
+                                            &kp ESC,       NAV_TAP,       &lt SYS TAB,       &lt SYM RET,   NUM_TAP,       &kp DEL \
 //                                         ╰─────────────┴──────────────┴──────────────╯    ╰──────────────┴──────────────┴──────────────╯
             )>;
         };
@@ -66,9 +69,9 @@
             display-name = "NAV";
             bindings = <LAYER_FROM38( \
 //           ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
-              &kp W_LFT,     &kp W_RHT,     &kp T_LFT,     &kp T_RHT,     &ht W_CLS T_CLS,   &kp INS,       &kp HOME,      &kp UP,        &kp END,       &kp PG_UP, \
-              &kp M_PNK,     &kp M_RNG,     &kp M_MDL,     &kp M_IDX,     &to NUM,           &kp CAPS,      &kp LEFT,      &kp DOWN,      &kp RIGHT,     &kp PG_DN, \
-&kp L_EXP,    &kp C_UND,     &kp C_CUT,     &kp C_CPY,     &kp C_PST,     &kp C_RDO,         &kp C_ALL,     &sel_ln,       &sel_wrd,      &none,         &none,         &kp R_EXP, \
+              &kp W_LFT,     &kp W_RHT,     &kp T_LFT,     &kp T_RHT,     &ht W_CLS T_CLS,   &kp INS,       NAV_BSPC,      NAV_UP,        NAV_DEL,       &kp PG_UP, \
+              &kp M_PNK,     &kp M_RNG,     &kp M_MDL,     &kp M_IDX,     &to NUM,           &kp CAPS,      NAV_LEFT,      NAV_DOWN,      NAV_RIGHT,     &kp PG_DN, \
+&kp L_EXP,    &kp C_UND,     &kp C_CUT,     &kp C_CPY,     &kp C_PST,     &kp C_RDO,         &kp K_APP,     &ht HOME END,  &none,         &none,         &none,        &kp R_EXP, \
                                             &trans,        &trans,        &trans,            &kp RET,       &kp BSPC,      &kp DEL \
 //                                         ╰──────────────┴──────────────┴──────────────╯   ╰──────────────┴──────────────┴──────────────╯
             )>;
@@ -78,8 +81,8 @@
             display-name = "SYS";
             bindings = <LAYER_FROM38( \
 //           ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
-              &rst_boot,     &con_bat,      &soft_off,     &kp LG(L),     &sleep,            &kp K_APP,     &uni_mdot,     &none,         &none,         &rst_boot, \
-              &out OUT_USB,  &out OUT_BLE,  &none,         &none,         &studio_unlock,    &none,         &hwp_kg,       &hwp_grm,      &hwp_mg,       &hwp_vac, \
+              &rst_boot,     &none,         &soft_off,     &kp LG(L),     &sleep,            &none,         &uni_mdot,     &none,         &none,         &rst_boot, \
+              &out OUT_USB,  &out OUT_BLE,  &none,         &none,         &none,             &none,         &hwp_kg,       &hwp_grm,      &hwp_mg,       &hwp_vac, \
 &kp L_EXP,    &bt BT_CLR_ALL, &bt BT_SEL 0, &bt BT_SEL 1,  &bt BT_SEL 2,  &bt BT_CLR,        &hwp_pm,       &hwp_tmp,      &hwp_won,      &hwp_phi,      &hwp_mm,        &kp R_EXP, \
                                             &trans,        &trans,        &trans,            &trans,        &trans,        &trans \
 //                                         ╰──────────────┴──────────────┴──────────────╯   ╰──────────────┴──────────────┴──────────────╯
