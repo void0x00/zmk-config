@@ -7,14 +7,77 @@
     tapping-term-ms = <150>;
 };
 
+&sk {
+  release-after-ms = <900>;
+  quick-release;
+};
+
+&sl { // Allow sticky mods to chord across sticky layers.
+  ignore-modifiers;
+};
+
 &lt {
-    flavor = "balanced";
-    tapping-term-ms = <150>;
+  flavor = "balanced";
+  tapping-term-ms = <200>;
+  quick-tap-ms = <QUICK_TAP_MS>;
 };
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
 };
+
+/* auto-layers */
+
+// Tap: backspace | hold: layer | shift + hold: layer
+#define NUM_TAP &num_layer_ht 0 BSPC
+ZMK_HOLD_TAP(num_layer_ht, bindings = <&morph_num>, <&kp>;
+             flavor = "balanced"; tapping-term-ms = <200>;
+             quick-tap-ms = <QUICK_TAP_MS>;)
+ZMK_MOD_MORPH(morph_num, bindings = <&mo NUM>, <&to NUM>;
+              mods = <(MOD_LSFT)>;)
+
+// Tap: backspace | hold: layer | shift + hold: layer
+#define NAV_TAP &nav_layer_ht 0 SPC
+ZMK_HOLD_TAP(nav_layer_ht, bindings = <&morph_nav>, <&kp>;
+             flavor = "balanced"; tapping-term-ms = <200>;
+             quick-tap-ms = <QUICK_TAP_MS>;)
+ZMK_MOD_MORPH(morph_nav, bindings = <&mo NAV>, <&to NAV>;
+              mods = <(MOD_LSFT)>;)
+
+// &kp BSPC | double-tap: num-word | Hold: num-layer.
+#define SMART_NUM &smart_num NUM 0
+ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
+             tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
+ZMK_TAP_DANCE(num_dance, bindings = <&kp BSPC>, <&num_word NUM>;
+              tapping-term-ms = <200>;)
+
+/* Nav cluster */
+
+// Trigger tap-action on all interrupts.
+#define MT_CORE                                                                \
+  flavor = "tap-preferred";                                                    \
+  tapping-term-ms = <220>;                                                     \
+  quick-tap-ms = <220>;                                                        \
+  hold-trigger-key-positions = <0>;
+
+&mt { MT_CORE };
+
+ZMK_HOLD_TAP(mt_home, bindings = <&masked_home>, <&kp>; MT_CORE)
+ZMK_HOLD_TAP(mt_end, bindings = <&masked_end>, <&kp>; MT_CORE)
+
+#define NAV_LEFT  &mt_home 0   LEFT  // Tap: left  | Long-tap: start of line.
+#define NAV_RIGHT &mt_end 0    RIGHT // Tap: right | Long-tap: end   of line.
+#define NAV_UP    &mt LC(HOME) UP    // Tap: up    | Long-tap: start of doc.
+#define NAV_DOWN  &mt LC(END)  DOWN  // Tap: down  | Long-tap: end   of doc.
+#define NAV_BSPC  &mt LC(BSPC) BSPC  // Tap: bspc  | Long-tap: delete word bwd.
+#define NAV_DEL   &mt LC(DEL)  DEL   // Tap: del   | Long-tap: delete word fwd.
+
+// Mask CTRL on left/right hold to avoid accidental jumps to start/end of doc.
+#define MASK_MODS(NAME, MODS, BINDING)                                         \
+  ZMK_MOD_MORPH(NAME, bindings = <BINDING>, <BINDING>; mods = <MODS>;)
+
+MASK_MODS(masked_home, (MOD_LCTL), &kp HOME)
+MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
 
 / {
     behaviors {
@@ -81,13 +144,6 @@
             tapping-term-ms = <500>;
             flavor = "tap-preferred";
             bindings = <&bootloader>, <&sys_reset>;
-        };
-        con_bat: con_bat {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <500>;
-            flavor = "tap-preferred";
-            bindings = <&ind_con>, <&ind_bat>;
         };
     };
 };
