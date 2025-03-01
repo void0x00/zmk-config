@@ -264,7 +264,7 @@ combos:
   k: Studio Unlock
   l: [SYS]
 - p: [3, 6]
-  k: '&RALT'
+  k: Alt
   l: [DEF]
 - p: [12, 13]
   k: +

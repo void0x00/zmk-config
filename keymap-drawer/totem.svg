@@ -396,7 +396,7 @@ path.combo { stroke: #7f7f7f; }
 <path d="M425,56 l-134,0" class="combo"/>
 <path d="M425,56 l134,0" class="combo"/>
 <rect rx="6" ry="6" x="411" y="43" width="28" height="26" class="combo"/>
-<text x="425" y="56" class="combo tap">&amp;RALT</text>
+<text x="425" y="56" class="combo tap">Alt</text>
 </g>
 </g>
 </g>

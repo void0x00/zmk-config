@@ -380,7 +380,7 @@ path.combo { stroke: #7f7f7f; }
 <path d="M336,45 l-121,0" class="combo"/>
 <path d="M336,45 l121,0" class="combo"/>
 <rect rx="6" ry="6" x="322" y="32" width="28" height="26" class="combo"/>
-<text x="336" y="45" class="combo tap">&amp;RALT</text>
+<text x="336" y="45" class="combo tap">Alt</text>
 </g>
 </g>
 </g>
