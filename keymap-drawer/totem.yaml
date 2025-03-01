@@ -55,7 +55,7 @@ layers:
   - '5'
   - '6'
   - '='
-  - {t: NAV, h: toggle}
+  - ''
   - Mouse ←
   - Mouse ↓
   - Mouse →
@@ -132,7 +132,7 @@ layers:
   - Alt
   - Shift
   - Ctrl
-  - {t: NUM, h: toggle}
+  - ''
   - CAPS
   - {t: ←, h: Home}
   - {t: ↓, h: Ctl+End}
@@ -144,8 +144,8 @@ layers:
   - Copy
   - Paste
   - Redo
-  - APP
-  - {t: End, h: Home}
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -263,6 +263,9 @@ combos:
 - p: [14, 15]
   k: Studio Unlock
   l: [SYS]
+- p: [3, 6]
+  k: '&RALT'
+  l: [DEF]
 - p: [12, 13]
   k: +
   l: [NUM]
