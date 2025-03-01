@@ -207,7 +207,7 @@ combos:
   k: Tab
   l: [DEF, NAV, NUM]
   a: bottom
-  o: -0.2
+  o: 0.9
 - p: [18, 16]
   k: Enter
   l: [DEF, NAV]

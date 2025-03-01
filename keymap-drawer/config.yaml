@@ -80,7 +80,7 @@ parse_config:
     combo_star:   {align: top}
     combo_ret:    {align: bottom, o: -0.20}
     combo_ret_n:    {align: bottom, o: -0.20}
-    combo_tab:    {align: bottom, o: -0.20}
+    combo_tab:    {align: bottom, o: 0.90}
     combo_batt:   {align: top}
     combo_conn:   {align: top, o: 0.40}
 

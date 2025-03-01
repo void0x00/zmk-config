@@ -349,10 +349,10 @@ path.combo { stroke: #7f7f7f; }
 <text x="560" y="95" class="combo tap">]</text>
 </g>
 <g class="combo combopos-9">
-<path d="M140,124 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v7" class="combo"/>
-<path d="M140,124 h50 a6.0,6.0 0 0 0 6.0,-6.0 v1" class="combo"/>
-<rect rx="6" ry="6" x="126" y="111" width="28" height="26" class="combo"/>
-<text x="140" y="124" class="combo tap">Tab</text>
+<path d="M140,186 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-55" class="combo"/>
+<path d="M140,186 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-60" class="combo"/>
+<rect rx="6" ry="6" x="126" y="173" width="28" height="26" class="combo"/>
+<text x="140" y="186" class="combo tap">Tab</text>
 </g>
 <g class="combo combopos-10">
 <path d="M532,124 h50 a6.0,6.0 0 0 0 6.0,-6.0 v7" class="combo"/>
@@ -539,10 +539,10 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g class="combo combopos-0">
-<path d="M140,124 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v7" class="combo"/>
-<path d="M140,124 h50 a6.0,6.0 0 0 0 6.0,-6.0 v1" class="combo"/>
-<rect rx="6" ry="6" x="126" y="111" width="28" height="26" class="combo"/>
-<text x="140" y="124" class="combo tap">Tab</text>
+<path d="M140,186 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-55" class="combo"/>
+<path d="M140,186 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-60" class="combo"/>
+<rect rx="6" ry="6" x="126" y="173" width="28" height="26" class="combo"/>
+<text x="140" y="186" class="combo tap">Tab</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="602" y="169" width="28" height="26" class="combo"/>
@@ -889,10 +889,10 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key tap">Bspc</text>
 </g>
 <g class="combo combopos-0">
-<path d="M140,124 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v7" class="combo"/>
-<path d="M140,124 h50 a6.0,6.0 0 0 0 6.0,-6.0 v1" class="combo"/>
-<rect rx="6" ry="6" x="126" y="111" width="28" height="26" class="combo"/>
-<text x="140" y="124" class="combo tap">Tab</text>
+<path d="M140,186 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-55" class="combo"/>
+<path d="M140,186 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-60" class="combo"/>
+<rect rx="6" ry="6" x="126" y="173" width="28" height="26" class="combo"/>
+<text x="140" y="186" class="combo tap">Tab</text>
 </g>
 <g class="combo combopos-1">
 <path d="M532,124 h50 a6.0,6.0 0 0 0 6.0,-6.0 v7" class="combo"/>
