@@ -37,7 +37,7 @@ COMBO(lpar,   &kp LPAR,    LM2 LM1,     DEF,          COMBO_TERM_FAST, COMBO_IDL
 COMBO(rpar,   &kp RPAR,    RM1 RM2,     DEF,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
 COMBO(lbkt,   &kp LBKT,    LM3 LM2,     DEF,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
 COMBO(rbkt,   &kp RBKT,    RM2 RM3,     DEF,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
-COMBO(tab,    &kp TAB,     LM3 LM1,     DEF NAV,      COMBO_TERM_FAST, COMBO_IDLE_SLOW)
+COMBO(tab,    &kp TAB,     LM3 LM1,     DEF NAV NUM,  COMBO_TERM_FAST, COMBO_IDLE_SLOW)
 COMBO(ret,    &kp RET,     RM3 RM1,     DEF NAV,      COMBO_TERM_FAST, COMBO_IDLE_SLOW)
 
 // bottom

@@ -225,7 +225,7 @@ combos:
   l: [DEF]
 - p: [11, 13]
   k: Tab
-  l: [DEF, NAV]
+  l: [DEF, NAV, NUM]
   a: bottom
   o: -0.2
 - p: [18, 16]
