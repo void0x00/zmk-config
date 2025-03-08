@@ -1,4 +1,4 @@
-d/* KEY POSITIONS (using keypos_def helpers)
+/* KEY POSITIONS (using keypos_def helpers)
     ╭─────────────────────┬─────────────────────╮
     │ LT4 LT3 LT2 LT1 LT0 │ RT0 RT1 RT2 RT3 RT4 │
 ╭───╯ LM4 LM3 LM2 LM1 LM0 │ RM0 RM1 RM2 RM3 RM4 ╰───╮
