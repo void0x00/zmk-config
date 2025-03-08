@@ -66,6 +66,6 @@ COMBO(star,   &kp STAR,    LT2 LM1,     NUM,          COMBO_TERM_SLOW, COMBO_IDL
 COMBO(slash,  &kp SLASH,   LM2 LT1,     NUM,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
 COMBO(comma,  &kp COMMA,   LB2 LB1,     NUM,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
 COMBO(dot,    &kp DOT,     LB3 LB2,     NUM,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
-COMBO(ret_n,  &kp RET,     LM3 LM2 LM1, NUM,          COMBO_TERM_FAST, COMBO_IDLE_SLOW)
+COMBO(ret_n,  &kp RET,     LM3 LM2 LM1, NUM,          COMBO_TERM_FAST, 0)
     };
 };
