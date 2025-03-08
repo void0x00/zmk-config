@@ -34,7 +34,6 @@ Additional features are provided by the following [modules](https://zmk.dev/docs
 
 - [caksoylar/zmk-config](https://github.com/caksoylar/zmk-config)
 - [minusfive/zmk-config](https://github.com/minusfive/zmk-config)
-- [stevep99/seniply](https://stevep99.github.io/seniply/)
 - [urob/zmk-config](https://github.com/urob/zmk-config)
 - [englmaxi/zmk-config](https://github.com/englmaxi/zmk-config)
 - [eigatech/zmk-config](https://github.com/eigatech/zmk-config)
