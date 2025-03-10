@@ -16,56 +16,50 @@
         __VA_ARGS__ \
     };
 
-#define COMBO_TERM_FAST 40
-#define COMBO_TERM_SLOW 80
-
-#define COMBO_IDLE_FAST 100
-#define COMBO_IDLE_SLOW 50
-
 / {
     combos {
         compatible = "zmk,combos";
 // top
-COMBO(at,     &kp AT,      LT3 LT2,     DEF,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
-COMBO(hash,   &kp HASH,    LT2 LT1,     DEF,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
-COMBO(esc,    &kp ESC,     LT4 LT3,     DEF,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
-COMBO(del,    &kp DEL,     RT2 RT3,     DEF,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
-COMBO(bspc,   &kp BSPC,    RT1 RT2,     DEF,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
+COMBO(at,     &kp AT,      LT3 LT2,     DEF,          80,  50)
+COMBO(hash,   &kp HASH,    LT2 LT1,     DEF,          80,  50)
+COMBO(esc,    &kp ESC,     LT4 LT3,     DEF,          80,  50)
+COMBO(del,    &kp DEL,     RT2 RT3,     DEF,          80,  50)
+COMBO(bspc,   &kp BSPC,    RT1 RT2,     DEF,          80,  50)
 
 // middle
-COMBO(lpar,   &kp LPAR,    LM2 LM1,     DEF,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
-COMBO(rpar,   &kp RPAR,    RM1 RM2,     DEF,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
-COMBO(lbkt,   &kp LBKT,    LM3 LM2,     DEF,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
-COMBO(rbkt,   &kp RBKT,    RM2 RM3,     DEF,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
-COMBO(tab,    &kp TAB,     LM3 LM1,     DEF NAV NUM,  COMBO_TERM_FAST, COMBO_IDLE_SLOW)
-COMBO(ret,    &kp RET,     RM3 RM1,     DEF NAV,      COMBO_TERM_FAST, COMBO_IDLE_SLOW)
+COMBO(lpar,   &kp LPAR,    LM2 LM1,     DEF,          40, 100)
+COMBO(rpar,   &kp RPAR,    RM1 RM2,     DEF,          40, 100)
+COMBO(lbkt,   &kp LBKT,    LM3 LM2,     DEF,          60, 100)
+COMBO(rbkt,   &kp RBKT,    RM2 RM3,     DEF,          60, 100)
+COMBO(tab,    &kp TAB,     LM3 LM1,     DEF NAV NUM,  40, 100)
+COMBO(ret,    &kp RET,     RM3 RM1,     DEF NAV,      40, 100)
 
 // bottom
-COMBO(semi,   &kp SEMI,    RB1 RB2,     DEF,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
-COMBO(colon,  &kp COLON,   RB2 RB3,     DEF,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
-COMBO(mute,   &kp C_MUTE,  RB4 RB3,             NUM,  COMBO_TERM_FAST, COMBO_IDLE_FAST)
-COMBO(plpu,   &kp C_PP,    RB2 RB1,             NUM,  COMBO_TERM_FAST, COMBO_IDLE_FAST)
+COMBO(semi,   &kp SEMI,    RB1 RB2,     DEF,          40, 100)
+COMBO(colon,  &kp COLON,   RB2 RB3,     DEF,          40, 100)
+COMBO(mute,   &kp C_MUTE,  RB4 RB3,             NUM,  40, 200)
+COMBO(plpu,   &kp C_PP,    RB2 RB1,             NUM,  40, 200)
 
 // thumb
 
 // cross
-COMBO(capswd, &caps_word,  LM1 RM1,     DEF,          COMBO_TERM_SLOW, COMBO_IDLE_FAST)
-COMBO(def,    &to DEF,     LM0 RM0,         NUM NAV,  COMBO_TERM_SLOW, COMBO_IDLE_FAST)
-COMBO(batt,   &ind_bat,    LT0 RT0,     SYS,          COMBO_TERM_SLOW, COMBO_IDLE_FAST)
-COMBO(conn,   &ind_con,    LT1 RT1,     SYS,          COMBO_TERM_SLOW, COMBO_IDLE_FAST)
-// COMBO(lock,   &kp LG(L),   LT0 RT0,     SYS,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
-// COMBO(sleep,  &sleep,      LT1 RT1,     SYS,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
-// COMBO(soft,   &soft_off,   LT2 RT2,     SYS,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
-COMBO(stdio, &studio_unlock, LM0 RM0,   SYS,          COMBO_TERM_SLOW, COMBO_IDLE_FAST)
-COMBO(ralt,  &kp RALT,       LT1 RT1,   DEF,          COMBO_TERM_SLOW, COMBO_IDLE_FAST)
+COMBO(capswd, &caps_word,  LM1 RM1,     DEF,          60, 200)
+COMBO(ralt,  &kp RALT,     LT1 RT1,     DEF,          60, 200)
+COMBO(stdio, &studio_unlock, LM0 RM0,   SYS,          80, 100)
+COMBO(def,    &to DEF,     LM0 RM0,         NUM NAV,  80, 100)
+COMBO(batt,   &ind_bat,    LT0 RT0,     SYS,          80, 100)
+COMBO(conn,   &ind_con,    LT1 RT1,     SYS,          80, 100)
+// COMBO(lock,   &kp LG(L),   LT0 RT0,     SYS,          80, 50)
+// COMBO(sleep,  &sleep,      LT1 RT1,     SYS,          80, 50)
+// COMBO(soft,   &soft_off,   LT2 RT2,     SYS,          80, 50)
 
 // calc +-*/.,RET
-COMBO(plus,   &kp PLUS,    LM2 LM1,     NUM,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
-COMBO(minus,  &kp MINUS,   LT2 LT1,     NUM,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
-COMBO(star,   &kp STAR,    LT2 LM1,     NUM,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
-COMBO(slash,  &kp SLASH,   LM2 LT1,     NUM,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
-COMBO(comma,  &kp COMMA,   LB2 LB1,     NUM,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
-COMBO(dot,    &kp DOT,     LB3 LB2,     NUM,          COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
-COMBO(ret_n,  &kp RET,     LM3 LM2,     NUM,          COMBO_TERM_FAST, COMBO_IDLE_FAST)
+COMBO(plus,   &kp PLUS,    LM2 LM1,     NUM,          40, 100)
+COMBO(minus,  &kp MINUS,   LT2 LT1,     NUM,          80,  50)
+COMBO(star,   &kp STAR,    LT2 LM1,     NUM,          80,  50)
+COMBO(slash,  &kp SLASH,   LM2 LT1,     NUM,          80,  50)
+COMBO(comma,  &kp COMMA,   LB2 LB1,     NUM,          40,  50)
+COMBO(dot,    &kp DOT,     LB3 LB2,     NUM,          40,  50)
+COMBO(ret_n,  &kp RET,     LM3 LM2,     NUM,          40, 100)
     };
 };
