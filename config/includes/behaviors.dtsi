@@ -36,7 +36,7 @@ ZMK_HOLD_TAP(num_layer_ht, bindings = <&morph_num>, <&kp>;
 ZMK_MOD_MORPH(morph_num, bindings = <&mo NUM>, <&to NUM>;
               mods = <(MOD_LSFT)>;)
 
-// Tap: backspace | hold: layer | shift + hold: layer
+// Tap: space | hold: layer | shift + hold: layer
 #define NAV_TAP &nav_layer_ht 0 SPC
 ZMK_HOLD_TAP(nav_layer_ht, bindings = <&morph_nav>, <&kp>;
              flavor = "balanced"; tapping-term-ms = <200>;
@@ -137,13 +137,6 @@ MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
             #binding-cells = <1>;
             bindings = <&kp>;
             release-after-ms = <500>;
-        };
-        rst_boot: rst_boot {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <500>;
-            flavor = "tap-preferred";
-            bindings = <&bootloader>, <&sys_reset>;
         };
     };
 };
