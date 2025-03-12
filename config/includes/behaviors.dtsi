@@ -1,5 +1,3 @@
-#include <behaviors.dtsi>
-
 #define QUICK_TAP_MS 175
 
 &mt {
