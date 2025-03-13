@@ -13,7 +13,7 @@ The number layer provides the four basic arithmetic operations as combo keys, ju
 There are symbol layers, but frequently used symbols are provided as combos. Function keys are provided on the opposite side of the symbol layers to reduce the layer key, and modifier keys are provided for shortcuts.<br />
 
 The navigation layer replaces the action of tapping the arrow keys multiple times with a hold. <br />
-On the opposite side of the navigation keys are frequently used shortcuts like Ctrl+C, Alt+Tab, etc.
+On the opposite side of the navigation keys are frequently used shortcuts like Ctrl+C, Alt+Tab, etc.<br />
 Some system layers are used as personal macro keys.<br />
 
 
