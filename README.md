@@ -2,7 +2,19 @@
 
 This is my personal [zmk-config](https://zmk.dev/) for my Split keyboards. <br />
 Sweep Bluethooth(Nice!Nano) or Display Dongle(Xiao_ble), Studio available. <br />
-Totem Bluethooth(Xiao_ble) or Dongle(Xiao_ble), Studio available.
+Totem Bluethooth(Xiao_ble) or Dongle(Xiao_ble), Studio available.<br /><br />
+
+Uses Urob's Timeless-Home-row-mods.<br />
+Provides RCTRL, RShift, RALT on the Default layer R4 row.<br /><br />
+
+The thumb, number, symbol, and function layers follow the Miryoku layout almost exactly.<br />
+The number layer provides the four basic arithmetic operations as combo keys, just like a full-size keyboard.<br /><br />
+
+There are symbol layers, but frequently used symbols are provided as combos. Function keys are provided on the opposite side of the symbol layers to reduce the layer key, and modifier keys are provided as shortcuts.<br /><br />
+
+The navigation layer replaces the action of tapping the arrow keys multiple times with a hold. <br />
+On the opposite side of the navigation keys are frequently used shortcuts like Ctrl+C, Alt+Tab, etc.Some system layers are used as personal macro keys.<br /><br />
+
 
 ## Modules
 
