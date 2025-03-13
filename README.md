@@ -46,8 +46,8 @@ Additional features are provided by the following [modules](https://zmk.dev/docs
 ## Inspirations
 
 - [caksoylar/zmk-config](https://github.com/caksoylar/zmk-config)
+- [eigatech/zmk-config](https://github.com/eigatech/zmk-config)
+- [englmaxi/zmk-config](https://github.com/englmaxi/zmk-config)
+- [manna-harbour/miryoku_zmk](https://github.com/manna-harbour/miryoku_zmk)
 - [minusfive/zmk-config](https://github.com/minusfive/zmk-config)
 - [urob/zmk-config](https://github.com/urob/zmk-config)
-- [englmaxi/zmk-config](https://github.com/englmaxi/zmk-config)
-- [eigatech/zmk-config](https://github.com/eigatech/zmk-config)
-- [manna-harbour/miryoku_zmk](https://github.com/manna-harbour/miryoku_zmk)

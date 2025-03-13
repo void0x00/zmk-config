@@ -28,8 +28,8 @@ layers:
   - V
   - B
   - N
-  - M
-  - {t: ',', h: Sft+Spc}
+  - {t: M, h: Ctrl}
+  - {t: ',', h: Shift}
   - {t: ., h: Alt}
   - /
   - Enter
@@ -248,6 +248,12 @@ combos:
 - p: [13, 16]
   k: Caps Word
   l: [DEF]
+- p: [3, 6]
+  k: Alt
+  l: [DEF]
+- p: [14, 15]
+  k: Studio Unlock
+  l: [SYS]
 - p: [14, 15]
   k: {t: DEF, h: toggle}
   l: [NUM, NAV]
@@ -260,12 +266,6 @@ combos:
   l: [SYS]
   a: top
   o: 0.4
-- p: [14, 15]
-  k: Studio Unlock
-  l: [SYS]
-- p: [3, 6]
-  k: Alt
-  l: [DEF]
 - p: [12, 13]
   k: +
   l: [NUM]
