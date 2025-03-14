@@ -29,7 +29,7 @@ layers:
   - B
   - N
   - {t: M, h: Ctrl}
-  - {t: ',', h: Shift}
+  - {t: ',', h: Sft+Spc}
   - {t: ., h: Alt}
   - /
   - Enter
