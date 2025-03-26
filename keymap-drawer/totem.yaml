@@ -163,7 +163,7 @@ layers:
   - Lock
   - Sleep
   - ''
-  - Mid-dot
+  - ''
   - ''
   - Reset
   - Boot
@@ -173,21 +173,21 @@ layers:
   - ''
   - ''
   - ''
-  - ㅎkg
-  - ㅎg
-  - ㅎmg
-  - ㅎVAC
+  - ''
+  - ''
+  - ''
+  - ''
   - Esc
   - BT CLR ALL
   - BT 1
   - BT 2
   - BT 3
   - BT CLR
-  - ㅎ±
-  - ㅎ℃
-  - ㅎ₩
-  - ㅎØ
-  - ㅎmm
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - Enter
   - {type: trans}
   - {type: trans}
